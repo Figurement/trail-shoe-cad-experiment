@@ -1,0 +1,2652 @@
+{
+  "status": "validated",
+  "source": "/Users/sosko/.copilot/session-state/5fd26ca4-7728-4dfd-93e2-1cbd5d67f877/files/Cougar_Trail_Editable_export_snapshot.FCStd",
+  "source_sha256": "71073da7fe86dbf0c61ca7061e35d241963860467cf01a307f6de08a37ded7c1",
+  "freecad_version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ],
+  "components_count": 78,
+  "source_solids": 229,
+  "roundtrip_solids": 229,
+  "roundtrip_valid": true,
+  "positive_volumes": true,
+  "volume_relative_tolerance": 0.001,
+  "components": {
+    "Heel_quarter_knit": {
+      "label": "Heel quarter knit",
+      "material": "02_Quarter_knit",
+      "source_solids": 1,
+      "source_volume": 15298.212829638476,
+      "exchange_volume": 15298.212829638476,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 15298.212829638476,
+          "step_volume": 15290.81762289736,
+          "relative_difference": 0.00048340331145009345,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Continuous_vamp_and_midfoot_mesh": {
+      "label": "Continuous vamp and midfoot mesh",
+      "material": "01_Engineered_mesh",
+      "source_solids": 1,
+      "source_volume": 53349.96284974972,
+      "exchange_volume": 53349.96284974972,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 53349.96284974972,
+          "step_volume": 49835.88484293164,
+          "relative_difference": 0.06586842462692664,
+          "comparison": "mesh_volume_at_two_resolutions",
+          "mesh_checks": [
+            {
+              "deflection_mm": 0.025,
+              "source_volume": 47023.11328125,
+              "step_volume": 47015.88671875,
+              "relative_difference": 0.0001536810728965817
+            },
+            {
+              "deflection_mm": 0.00625,
+              "source_volume": 47113.95703125,
+              "step_volume": 47109.66015625,
+              "relative_difference": 9.120174298138332e-05
+            }
+          ]
+        }
+      ]
+    },
+    "Lateral_quarter_material_join": {
+      "label": "Lateral quarter material join",
+      "material": "03_Deep_teal_TPU",
+      "source_solids": 1,
+      "source_volume": 179.23254937935621,
+      "exchange_volume": 179.235542955774,
+      "converted_to_nurbs": true,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 179.23254937935621,
+          "step_volume": 179.23249754009066,
+          "relative_difference": 2.8922908105529686e-07,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Medial_quarter_material_join": {
+      "label": "Medial quarter material join",
+      "material": "03_Deep_teal_TPU",
+      "source_solids": 1,
+      "source_volume": 179.2325294795171,
+      "exchange_volume": 179.23025698926358,
+      "converted_to_nurbs": true,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 179.2325294795171,
+          "step_volume": 179.23235370038105,
+          "relative_difference": 9.807323288564256e-07,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lateral_windowed_TPU_quarter_frame": {
+      "label": "Lateral windowed TPU quarter frame",
+      "material": "03_Deep_teal_TPU",
+      "source_solids": 1,
+      "source_volume": 4171.681999476421,
+      "exchange_volume": 4171.681999476421,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 4171.681999476421,
+          "step_volume": 4171.722491317216,
+          "relative_difference": 9.706358442455386e-06,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lateral_windowed_TPU_quarter_frame_bonding_flange": {
+      "label": "Lateral windowed TPU quarter frame bonding flange",
+      "material": "03_Deep_teal_TPU",
+      "source_solids": 1,
+      "source_volume": 2249.571970203211,
+      "exchange_volume": 2249.494737693887,
+      "converted_to_nurbs": true,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 2249.571970203211,
+          "step_volume": 2249.524146870841,
+          "relative_difference": 2.1258858575594503e-05,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Medial_windowed_TPU_quarter_frame": {
+      "label": "Medial windowed TPU quarter frame",
+      "material": "03_Deep_teal_TPU",
+      "source_solids": 1,
+      "source_volume": 4786.832703906776,
+      "exchange_volume": 4786.832703906776,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 4786.832703906776,
+          "step_volume": 4786.787259512737,
+          "relative_difference": 9.493624876801331e-06,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Medial_windowed_TPU_quarter_frame_bonding_flange": {
+      "label": "Medial windowed TPU quarter frame bonding flange",
+      "material": "03_Deep_teal_TPU",
+      "source_solids": 1,
+      "source_volume": 2503.9695523984265,
+      "exchange_volume": 2503.980990233278,
+      "converted_to_nurbs": true,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 2503.9695523984265,
+          "step_volume": 2503.0631397061115,
+          "relative_difference": 0.0003619903011387295,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lateral_tapered_structural_arch": {
+      "label": "Lateral tapered structural arch",
+      "material": "05_Obsidian_support",
+      "source_solids": 1,
+      "source_volume": 849.7474775644753,
+      "exchange_volume": 849.7474775644753,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 849.7474775644753,
+          "step_volume": 849.7469333312529,
+          "relative_difference": 6.404646518741523e-07,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lateral_tapered_structural_arch_bonding_flange": {
+      "label": "Lateral tapered structural arch bonding flange",
+      "material": "03_Deep_teal_TPU",
+      "source_solids": 1,
+      "source_volume": 863.8677202318535,
+      "exchange_volume": 863.8709988621206,
+      "converted_to_nurbs": true,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 863.8677202318535,
+          "step_volume": 863.8677527592329,
+          "relative_difference": 3.7653194628641703e-08,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lateral_swept_coral_perimeter": {
+      "label": "Lateral swept coral perimeter",
+      "material": "04_Coral_TPU",
+      "source_solids": 1,
+      "source_volume": 701.344815213705,
+      "exchange_volume": 701.344815213705,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 701.344815213705,
+          "step_volume": 701.3434524635758,
+          "relative_difference": 1.943052974370543e-06,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lateral_swept_coral_perimeter_bonding_flange": {
+      "label": "Lateral swept coral perimeter bonding flange",
+      "material": "03_Deep_teal_TPU",
+      "source_solids": 1,
+      "source_volume": 1489.061457630335,
+      "exchange_volume": 1489.066555898737,
+      "converted_to_nurbs": true,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 1489.061457630335,
+          "step_volume": 1489.0612988978498,
+          "relative_difference": 1.0659901540489451e-07,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lateral_rear_structural_inlay": {
+      "label": "Lateral rear structural inlay",
+      "material": "05_Obsidian_support",
+      "source_solids": 1,
+      "source_volume": 646.8014303319165,
+      "exchange_volume": 646.8014303319165,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 646.8014303319165,
+          "step_volume": 646.8015857069241,
+          "relative_difference": 2.4022056893144493e-07,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lateral_rear_structural_inlay_bonding_flange": {
+      "label": "Lateral rear structural inlay bonding flange",
+      "material": "03_Deep_teal_TPU",
+      "source_solids": 1,
+      "source_volume": 393.2031104563195,
+      "exchange_volume": 393.20319380241887,
+      "converted_to_nurbs": true,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 393.2031104563195,
+          "step_volume": 393.20297660521686,
+          "relative_difference": 3.4041211548591206e-07,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lateral_sculpted_coral_return": {
+      "label": "Lateral sculpted coral return",
+      "material": "04_Coral_TPU",
+      "source_solids": 2,
+      "source_volume": 423.0504394639381,
+      "exchange_volume": 423.0504394639381,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 2,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 163.26832566447993,
+          "step_volume": 163.26825841585585,
+          "relative_difference": 4.1189020469017686e-07,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 1,
+          "source_volume": 259.7818148879902,
+          "step_volume": 259.78233113055643,
+          "relative_difference": 1.9872159505976722e-06,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lateral_sculpted_coral_return_bonding_flange": {
+      "label": "Lateral sculpted coral return bonding flange",
+      "material": "03_Deep_teal_TPU",
+      "source_solids": 1,
+      "source_volume": 859.1912994834854,
+      "exchange_volume": 859.5640092586892,
+      "converted_to_nurbs": true,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 859.1912994834854,
+          "step_volume": 859.5625818460298,
+          "relative_difference": 0.00043213003060859186,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Medial_heel_chevron_border": {
+      "label": "Medial heel chevron border",
+      "material": "04_Coral_TPU",
+      "source_solids": 1,
+      "source_volume": 843.8528439429002,
+      "exchange_volume": 843.8528439429002,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 843.8528439429002,
+          "step_volume": 843.8532938556209,
+          "relative_difference": 5.331649041798762e-07,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Medial_heel_chevron_border_bonding_flange": {
+      "label": "Medial heel chevron border bonding flange",
+      "material": "03_Deep_teal_TPU",
+      "source_solids": 1,
+      "source_volume": 1028.1945474562226,
+      "exchange_volume": 1028.1965255896127,
+      "converted_to_nurbs": true,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 1028.1945474562226,
+          "step_volume": 1028.1955793672694,
+          "relative_difference": 1.0036145876470812e-06,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Medial_heel_counter_inlay": {
+      "label": "Medial heel counter inlay",
+      "material": "05_Obsidian_support",
+      "source_solids": 1,
+      "source_volume": 342.3114592436089,
+      "exchange_volume": 342.3114592436089,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 342.3114592436089,
+          "step_volume": 342.3114655968949,
+          "relative_difference": 1.855995705396349e-08,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "carrier_Section_Loft": {
+      "label": "Continuous rockered rubber carrier",
+      "material": "08_Charcoal_rubber",
+      "source_solids": 1,
+      "source_volume": 62909.65100660859,
+      "exchange_volume": 62909.65100660859,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 62909.65100660859,
+          "step_volume": 62909.65100657998,
+          "relative_difference": 4.547643307695965e-13,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Orange_sidewall_traction_shoulders": {
+      "label": "FIXED | Orange sidewall traction shoulders",
+      "material": "09_Orange_rubber",
+      "source_solids": 7,
+      "source_volume": 2366.9963110057465,
+      "exchange_volume": 2366.9963110057465,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 7,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 320.99406273459687,
+          "step_volume": 320.99406273460767,
+          "relative_difference": 3.364625965833937e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 1,
+          "source_volume": 321.20877351391056,
+          "step_volume": 321.20877351392835,
+          "relative_difference": 5.5390735155814144e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 2,
+          "source_volume": 322.3082888068033,
+          "step_volume": 322.3082888070022,
+          "relative_difference": 6.170958970068192e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 3,
+          "source_volume": 329.704714498043,
+          "step_volume": 329.7047144980041,
+          "relative_difference": 1.1809883270530123e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 4,
+          "source_volume": 330.6488329417112,
+          "step_volume": 330.64883294182437,
+          "relative_difference": 3.422823118562768e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 5,
+          "source_volume": 360.9252199486514,
+          "step_volume": 360.92521994841127,
+          "relative_difference": 6.652530441131625e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 6,
+          "source_volume": 381.2064185620377,
+          "step_volume": 381.20641856189445,
+          "relative_difference": 3.757686349290165e-13,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Charcoal_sidewall_traction_shoulders": {
+      "label": "FIXED | Charcoal sidewall traction shoulders",
+      "material": "08_Charcoal_rubber",
+      "source_solids": 15,
+      "source_volume": 5252.813798717586,
+      "exchange_volume": 5252.813798717586,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 15,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 320.3543195683442,
+          "step_volume": 320.3543195683542,
+          "relative_difference": 3.122930177118423e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 1,
+          "source_volume": 320.3543195683442,
+          "step_volume": 320.35431956844496,
+          "relative_difference": 3.1459972750175933e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 2,
+          "source_volume": 320.96914962232097,
+          "step_volume": 320.96914962230045,
+          "relative_difference": 6.393285533172827e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 3,
+          "source_volume": 320.96914962232097,
+          "step_volume": 320.969149622448,
+          "relative_difference": 3.9581698522551994e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 4,
+          "source_volume": 320.99406273459687,
+          "step_volume": 320.9940627345851,
+          "relative_difference": 3.6656714469875e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 5,
+          "source_volume": 321.20877351391056,
+          "step_volume": 321.20877351426134,
+          "relative_difference": 1.0920646218738948e-12,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 6,
+          "source_volume": 322.3082888068033,
+          "step_volume": 322.30828880678365,
+          "relative_difference": 6.102177203897098e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 7,
+          "source_volume": 323.1439314371502,
+          "step_volume": 323.1439314370869,
+          "relative_difference": 1.9578497083546305e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 8,
+          "source_volume": 323.1439314371502,
+          "step_volume": 323.14393143708935,
+          "relative_difference": 1.8822095129734545e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 9,
+          "source_volume": 329.704714498043,
+          "step_volume": 329.7047144978575,
+          "relative_difference": 5.627366276643842e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 10,
+          "source_volume": 330.6488329417112,
+          "step_volume": 330.64883294174217,
+          "relative_difference": 9.369355096015613e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 11,
+          "source_volume": 360.9252199486514,
+          "step_volume": 360.92521994868633,
+          "relative_difference": 9.685857531477153e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 12,
+          "source_volume": 381.2064185620377,
+          "step_volume": 381.20641856212694,
+          "relative_difference": 2.341098241422841e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 13,
+          "source_volume": 478.441343228105,
+          "step_volume": 478.4413432277198,
+          "relative_difference": 8.050537681422701e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 14,
+          "source_volume": 478.441343228105,
+          "step_volume": 478.44134322802836,
+          "relative_difference": 1.6015532459500888e-13,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Continuous_sculpted_EVA_midsole": {
+      "label": "Continuous sculpted EVA midsole",
+      "material": "06_EVA_midsole",
+      "source_solids": 1,
+      "source_volume": 622478.1023273454,
+      "exchange_volume": 622478.1023273454,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 622478.1023273454,
+          "step_volume": 622478.8790160064,
+          "relative_difference": 1.247736519657046e-06,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Orange_traction_lugs": {
+      "label": "Orange traction lugs",
+      "material": "09_Orange_rubber",
+      "source_solids": 30,
+      "source_volume": 16865.25939050784,
+      "exchange_volume": 16865.25939050784,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 30,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 530.0499076740738,
+          "step_volume": 530.0499076739471,
+          "relative_difference": 2.3893436332745336e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 1,
+          "source_volume": 530.0499076740739,
+          "step_volume": 530.0499076741137,
+          "relative_difference": 7.50691446720006e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 2,
+          "source_volume": 530.0500627462992,
+          "step_volume": 530.0500627461881,
+          "relative_difference": 2.09550093963826e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 3,
+          "source_volume": 530.0500627462993,
+          "step_volume": 530.0500627462853,
+          "relative_difference": 2.6381434552252396e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 4,
+          "source_volume": 530.0503513316079,
+          "step_volume": 530.0503513314333,
+          "relative_difference": 3.2944602772493085e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 5,
+          "source_volume": 530.0503513316083,
+          "step_volume": 530.0503513316256,
+          "relative_difference": 3.2601429826946254e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 6,
+          "source_volume": 530.050358875095,
+          "step_volume": 530.0503588751245,
+          "relative_difference": 5.576560285771936e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 7,
+          "source_volume": 530.050358875095,
+          "step_volume": 530.0503588751513,
+          "relative_difference": 1.063836116054954e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 8,
+          "source_volume": 530.0505899219856,
+          "step_volume": 530.0505899218102,
+          "relative_difference": 3.309472603931488e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 9,
+          "source_volume": 530.0505899219856,
+          "step_volume": 530.0505899220022,
+          "relative_difference": 3.131451718561227e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 10,
+          "source_volume": 578.2362629171726,
+          "step_volume": 578.236262916739,
+          "relative_difference": 7.498692608497874e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 11,
+          "source_volume": 578.2362629171738,
+          "step_volume": 578.2362629171344,
+          "relative_difference": 6.822355362214884e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 12,
+          "source_volume": 578.2363294111777,
+          "step_volume": 578.2363294111476,
+          "relative_difference": 5.210155513214952e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 13,
+          "source_volume": 578.2364213217742,
+          "step_volume": 578.2364213217738,
+          "relative_difference": 5.898288322711108e-16,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 14,
+          "source_volume": 578.2364348256083,
+          "step_volume": 578.2364348256061,
+          "relative_difference": 3.735582517144841e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 15,
+          "source_volume": 578.236475180543,
+          "step_volume": 578.2364751804499,
+          "relative_difference": 1.6102325621179794e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 16,
+          "source_volume": 578.2365157088976,
+          "step_volume": 578.2365157088091,
+          "relative_difference": 1.53158861779189e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 17,
+          "source_volume": 578.2367551364671,
+          "step_volume": 578.2367551364295,
+          "relative_difference": 6.507774359133212e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 18,
+          "source_volume": 578.2367551364674,
+          "step_volume": 578.2367551364388,
+          "relative_difference": 4.954559330820449e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 19,
+          "source_volume": 578.2368542878179,
+          "step_volume": 578.2368542877908,
+          "relative_difference": 4.679305232294436e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 20,
+          "source_volume": 578.2369816083165,
+          "step_volume": 578.2369816083758,
+          "relative_difference": 1.0263011737094687e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 21,
+          "source_volume": 578.2370615292028,
+          "step_volume": 578.2370615291113,
+          "relative_difference": 1.582705614266113e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 22,
+          "source_volume": 578.2371203793522,
+          "step_volume": 578.2371203793051,
+          "relative_difference": 8.139628044956917e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 23,
+          "source_volume": 578.2371203793523,
+          "step_volume": 578.2371203793095,
+          "relative_difference": 7.392512427303864e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 24,
+          "source_volume": 578.2371921318497,
+          "step_volume": 578.2371921318127,
+          "relative_difference": 6.409464766630917e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 25,
+          "source_volume": 578.2408927831586,
+          "step_volume": 578.2408927831157,
+          "relative_difference": 7.431785817141446e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 26,
+          "source_volume": 578.240892783159,
+          "step_volume": 578.240892783128,
+          "relative_difference": 5.3674008679354855e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 27,
+          "source_volume": 578.2415069907387,
+          "step_volume": 578.2415069906442,
+          "relative_difference": 1.6338114957938508e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 28,
+          "source_volume": 578.2415069907388,
+          "step_volume": 578.2415069906444,
+          "relative_difference": 1.631845416978214e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 29,
+          "source_volume": 578.241506990739,
+          "step_volume": 578.2415069906483,
+          "relative_difference": 1.5689308948778485e-13,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Charcoal_traction_lugs": {
+      "label": "Charcoal traction lugs",
+      "material": "08_Charcoal_rubber",
+      "source_solids": 55,
+      "source_volume": 30646.56672972875,
+      "exchange_volume": 30646.56672972875,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 55,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 530.0499686269126,
+          "step_volume": 530.0499686268813,
+          "relative_difference": 5.898289260243346e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 1,
+          "source_volume": 530.0499686269129,
+          "step_volume": 530.0499686268898,
+          "relative_difference": 4.354009890288721e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 2,
+          "source_volume": 530.0500528782931,
+          "step_volume": 530.0500528781308,
+          "relative_difference": 3.060675431457727e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 3,
+          "source_volume": 530.0500528782932,
+          "step_volume": 530.0500528783115,
+          "relative_difference": 3.453179708932684e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 4,
+          "source_volume": 530.0500652568076,
+          "step_volume": 530.0500652568235,
+          "relative_difference": 3.0027648941642746e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 5,
+          "source_volume": 530.0500652568077,
+          "step_volume": 530.0500652569705,
+          "relative_difference": 3.0713995203166e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 6,
+          "source_volume": 530.0501022488313,
+          "step_volume": 530.0501022488739,
+          "relative_difference": 8.043119690898996e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 7,
+          "source_volume": 530.0501022488315,
+          "step_volume": 530.0501022490248,
+          "relative_difference": 3.64621425987421e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 8,
+          "source_volume": 530.0501393998226,
+          "step_volume": 530.0501393998268,
+          "relative_difference": 7.935877538797985e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 9,
+          "source_volume": 530.0501393998227,
+          "step_volume": 530.0501393999832,
+          "relative_difference": 3.02850245534669e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 10,
+          "source_volume": 530.050449763833,
+          "step_volume": 530.0504497637866,
+          "relative_difference": 8.750908486368817e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 11,
+          "source_volume": 530.050449763833,
+          "step_volume": 530.0504497638954,
+          "relative_difference": 1.1775119507393335e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 12,
+          "source_volume": 530.0505664742897,
+          "step_volume": 530.0505664741939,
+          "relative_difference": 1.8059468929224103e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 13,
+          "source_volume": 530.0505664742899,
+          "step_volume": 530.0505664742911,
+          "relative_difference": 2.359313043010274e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 14,
+          "source_volume": 530.0506397351024,
+          "step_volume": 530.05063973515,
+          "relative_difference": 8.965388324290034e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 15,
+          "source_volume": 530.0506397351027,
+          "step_volume": 530.0506397353009,
+          "relative_difference": 3.7405830711870363e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 16,
+          "source_volume": 530.0506936810729,
+          "step_volume": 530.0506936811257,
+          "relative_difference": 9.973457288287131e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 17,
+          "source_volume": 530.050693681073,
+          "step_volume": 530.0506936812717,
+          "relative_difference": 3.749162008586215e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 18,
+          "source_volume": 530.0507594541958,
+          "step_volume": 530.0507594542258,
+          "relative_difference": 5.662349241686206e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 19,
+          "source_volume": 530.0507594541959,
+          "step_volume": 530.050759454245,
+          "relative_difference": 9.265662395486516e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 20,
+          "source_volume": 530.0541517178946,
+          "step_volume": 530.0541517179631,
+          "relative_difference": 1.2933237655804615e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 21,
+          "source_volume": 530.0541517178947,
+          "step_volume": 530.0541517181088,
+          "relative_difference": 4.0386876460829326e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 22,
+          "source_volume": 530.0547147415106,
+          "step_volume": 530.0547147414031,
+          "relative_difference": 2.0268485244833458e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 23,
+          "source_volume": 530.0547147415109,
+          "step_volume": 530.0547147415085,
+          "relative_difference": 4.50410783218521e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 24,
+          "source_volume": 578.2362629171705,
+          "step_volume": 578.2362629171403,
+          "relative_difference": 5.229817078816051e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 25,
+          "source_volume": 578.2363294111775,
+          "step_volume": 578.2363294110648,
+          "relative_difference": 1.9484015523003846e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 26,
+          "source_volume": 578.2363294111777,
+          "step_volume": 578.236329411156,
+          "relative_difference": 3.7552441623549275e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 27,
+          "source_volume": 578.2364213217745,
+          "step_volume": 578.2364213217861,
+          "relative_difference": 2.0054180297217756e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 28,
+          "source_volume": 578.2364213217745,
+          "step_volume": 578.2364213217878,
+          "relative_difference": 2.3003324458573308e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 29,
+          "source_volume": 578.2364320868717,
+          "step_volume": 578.2364320868479,
+          "relative_difference": 4.1091407883217e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 30,
+          "source_volume": 578.2364320868721,
+          "step_volume": 578.2364320868621,
+          "relative_difference": 1.7301645424512407e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 31,
+          "source_volume": 578.2364320868722,
+          "step_volume": 578.2364320869148,
+          "relative_difference": 7.353199305417772e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 32,
+          "source_volume": 578.2364348256084,
+          "step_volume": 578.2364348255658,
+          "relative_difference": 7.372860231206921e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 33,
+          "source_volume": 578.2364348256085,
+          "step_volume": 578.2364348256107,
+          "relative_difference": 3.73558251714484e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 34,
+          "source_volume": 578.2364751805429,
+          "step_volume": 578.2364751804901,
+          "relative_difference": 9.142346048655196e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 35,
+          "source_volume": 578.2364751805432,
+          "step_volume": 578.2364751804907,
+          "relative_difference": 9.063702211677514e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 36,
+          "source_volume": 578.2365157088974,
+          "step_volume": 578.2365157088082,
+          "relative_difference": 1.5433851925117253e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 37,
+          "source_volume": 578.2365157088976,
+          "step_volume": 578.2365157088122,
+          "relative_difference": 1.4765379357659939e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 38,
+          "source_volume": 578.2367469072083,
+          "step_volume": 578.236746907122,
+          "relative_difference": 1.492266105401177e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 39,
+          "source_volume": 578.2367469072087,
+          "step_volume": 578.2367469071238,
+          "relative_difference": 1.4686729653948328e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 40,
+          "source_volume": 578.236746907209,
+          "step_volume": 578.2367469071311,
+          "relative_difference": 1.346775075362062e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 41,
+          "source_volume": 578.2367551364674,
+          "step_volume": 578.2367551364298,
+          "relative_difference": 6.507774359133209e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 42,
+          "source_volume": 578.2368542878176,
+          "step_volume": 578.2368542877464,
+          "relative_difference": 1.2307752417715623e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 43,
+          "source_volume": 578.2368542878177,
+          "step_volume": 578.2368542877902,
+          "relative_difference": 4.757949017711151e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 44,
+          "source_volume": 578.2369816083165,
+          "step_volume": 578.236981608309,
+          "relative_difference": 1.2976221736556501e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 45,
+          "source_volume": 578.2369816083165,
+          "step_volume": 578.2369816083225,
+          "relative_difference": 1.0420299273295373e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 46,
+          "source_volume": 578.2370071876209,
+          "step_volume": 578.2370071876268,
+          "relative_difference": 1.0223689400782084e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 47,
+          "source_volume": 578.2370071876209,
+          "step_volume": 578.2370071876268,
+          "relative_difference": 1.0223689400782084e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 48,
+          "source_volume": 578.237007187621,
+          "step_volume": 578.2370071876867,
+          "relative_difference": 1.1364023987792392e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 49,
+          "source_volume": 578.2370615292026,
+          "step_volume": 578.2370615291393,
+          "relative_difference": 1.0951143194363046e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 50,
+          "source_volume": 578.2370615292027,
+          "step_volume": 578.237061529156,
+          "relative_difference": 8.08064605544562e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 51,
+          "source_volume": 578.2371203793524,
+          "step_volume": 578.2371203793055,
+          "relative_difference": 8.119967107650254e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 52,
+          "source_volume": 578.2371921318497,
+          "step_volume": 578.2371921318124,
+          "relative_difference": 6.448786636364849e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 53,
+          "source_volume": 578.2371921318498,
+          "step_volume": 578.2371921318216,
+          "relative_difference": 4.8759118470075675e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 54,
+          "source_volume": 578.2408927831574,
+          "step_volume": 578.2408927831298,
+          "relative_difference": 4.777576596733797e-14,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lateral_contoured_eyestay_01": {
+      "label": "Lateral contoured eyestay 01",
+      "material": "04_Coral_TPU",
+      "source_solids": 1,
+      "source_volume": 583.4014152347968,
+      "exchange_volume": 582.7583748517346,
+      "converted_to_nurbs": true,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 583.4014152347968,
+          "step_volume": 582.7851173379826,
+          "relative_difference": 0.001056387387346636,
+          "comparison": "mesh_volume_at_two_resolutions",
+          "mesh_checks": [
+            {
+              "deflection_mm": 0.025,
+              "source_volume": 583.7909545898438,
+              "step_volume": 583.9329833984375,
+              "relative_difference": 0.00024328710042027926
+            },
+            {
+              "deflection_mm": 0.00625,
+              "source_volume": 583.43505859375,
+              "step_volume": 583.4509887695312,
+              "relative_difference": 2.7304111308714302e-05
+            }
+          ]
+        }
+      ]
+    },
+    "Lateral_contoured_eyestay_02": {
+      "label": "Lateral contoured eyestay 02",
+      "material": "04_Coral_TPU",
+      "source_solids": 1,
+      "source_volume": 127.91335344159238,
+      "exchange_volume": 127.7448885833805,
+      "converted_to_nurbs": true,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 127.91335344159238,
+          "step_volume": 127.74633655432461,
+          "relative_difference": 0.0013057032965993387,
+          "comparison": "mesh_volume_at_two_resolutions",
+          "mesh_checks": [
+            {
+              "deflection_mm": 0.025,
+              "source_volume": 127.9189224243164,
+              "step_volume": 127.93196868896484,
+              "relative_difference": 0.00010198854400259945
+            },
+            {
+              "deflection_mm": 0.00625,
+              "source_volume": 127.8733139038086,
+              "step_volume": 127.878173828125,
+              "relative_difference": 3.800577437182929e-05
+            }
+          ]
+        }
+      ]
+    },
+    "Lateral_contoured_eyestay_03": {
+      "label": "Lateral contoured eyestay 03",
+      "material": "04_Coral_TPU",
+      "source_solids": 1,
+      "source_volume": 116.6023544405462,
+      "exchange_volume": 116.44652815033689,
+      "converted_to_nurbs": true,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 116.6023544405462,
+          "step_volume": 116.44651499502915,
+          "relative_difference": 0.001336503420233302,
+          "comparison": "mesh_volume_at_two_resolutions",
+          "mesh_checks": [
+            {
+              "deflection_mm": 0.025,
+              "source_volume": 116.65900421142578,
+              "step_volume": 116.6690673828125,
+              "relative_difference": 8.626142023705999e-05
+            },
+            {
+              "deflection_mm": 0.00625,
+              "source_volume": 116.6234130859375,
+              "step_volume": 116.6336441040039,
+              "relative_difference": 8.77269649008404e-05
+            }
+          ]
+        }
+      ]
+    },
+    "Lateral_contoured_eyestay_04": {
+      "label": "Lateral contoured eyestay 04",
+      "material": "04_Coral_TPU",
+      "source_solids": 1,
+      "source_volume": 113.50521094749924,
+      "exchange_volume": 113.35303490168285,
+      "converted_to_nurbs": true,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 113.50521094749924,
+          "step_volume": 113.353034472448,
+          "relative_difference": 0.0013407003412523716,
+          "comparison": "mesh_volume_at_two_resolutions",
+          "mesh_checks": [
+            {
+              "deflection_mm": 0.025,
+              "source_volume": 113.706298828125,
+              "step_volume": 113.71908569335938,
+              "relative_difference": 0.0001124552057903427
+            },
+            {
+              "deflection_mm": 0.00625,
+              "source_volume": 113.5226058959961,
+              "step_volume": 113.53182983398438,
+              "relative_difference": 8.125199307644307e-05
+            }
+          ]
+        }
+      ]
+    },
+    "Medial_contoured_eyestay_01": {
+      "label": "Medial contoured eyestay 01",
+      "material": "04_Coral_TPU",
+      "source_solids": 1,
+      "source_volume": 583.3320287216804,
+      "exchange_volume": 582.6818923213717,
+      "converted_to_nurbs": true,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 583.3320287216804,
+          "step_volume": 582.6799836354638,
+          "relative_difference": 0.0011177940762922194,
+          "comparison": "mesh_volume_at_two_resolutions",
+          "mesh_checks": [
+            {
+              "deflection_mm": 0.025,
+              "source_volume": 583.7794799804688,
+              "step_volume": 584.0121459960938,
+              "relative_difference": 0.00039855120572717664
+            },
+            {
+              "deflection_mm": 0.00625,
+              "source_volume": 583.4876098632812,
+              "step_volume": 583.4420166015625,
+              "relative_difference": 7.813921143832531e-05
+            }
+          ]
+        }
+      ]
+    },
+    "Medial_contoured_eyestay_02": {
+      "label": "Medial contoured eyestay 02",
+      "material": "04_Coral_TPU",
+      "source_solids": 1,
+      "source_volume": 127.91349102351501,
+      "exchange_volume": 127.7458602216322,
+      "converted_to_nurbs": true,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 127.91349102351501,
+          "step_volume": 127.7460276664854,
+          "relative_difference": 0.0013091922962122746,
+          "comparison": "mesh_volume_at_two_resolutions",
+          "mesh_checks": [
+            {
+              "deflection_mm": 0.025,
+              "source_volume": 127.93061065673828,
+              "step_volume": 127.94207763671875,
+              "relative_difference": 8.963437227104933e-05
+            },
+            {
+              "deflection_mm": 0.00625,
+              "source_volume": 127.89954376220703,
+              "step_volume": 127.91100311279297,
+              "relative_difference": 8.959649306680027e-05
+            }
+          ]
+        }
+      ]
+    },
+    "Medial_contoured_eyestay_03": {
+      "label": "Medial contoured eyestay 03",
+      "material": "04_Coral_TPU",
+      "source_solids": 1,
+      "source_volume": 116.60220471356905,
+      "exchange_volume": 116.4466299758437,
+      "converted_to_nurbs": true,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 116.60220471356905,
+          "step_volume": 116.44672847103276,
+          "relative_difference": 0.0013333902469358915,
+          "comparison": "mesh_volume_at_two_resolutions",
+          "mesh_checks": [
+            {
+              "deflection_mm": 0.025,
+              "source_volume": 116.65888214111328,
+              "step_volume": 116.66913604736328,
+              "relative_difference": 8.78964898497539e-05
+            },
+            {
+              "deflection_mm": 0.00625,
+              "source_volume": 116.6230697631836,
+              "step_volume": 116.63302612304688,
+              "relative_difference": 8.537212991819519e-05
+            }
+          ]
+        }
+      ]
+    },
+    "Medial_contoured_eyestay_04": {
+      "label": "Medial contoured eyestay 04",
+      "material": "04_Coral_TPU",
+      "source_solids": 1,
+      "source_volume": 113.50517836832724,
+      "exchange_volume": 113.3526129878089,
+      "converted_to_nurbs": true,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 113.50517836832724,
+          "step_volume": 113.35268337501564,
+          "relative_difference": 0.0013435069263249102,
+          "comparison": "mesh_volume_at_two_resolutions",
+          "mesh_checks": [
+            {
+              "deflection_mm": 0.025,
+              "source_volume": 113.63052368164062,
+              "step_volume": 113.6515884399414,
+              "relative_difference": 0.00018537939999113725
+            },
+            {
+              "deflection_mm": 0.00625,
+              "source_volume": 113.52239227294922,
+              "step_volume": 113.52838134765625,
+              "relative_difference": 5.2756769718447537e-05
+            }
+          ]
+        }
+      ]
+    },
+    "Lateral_eyelet_01": {
+      "label": "Lateral eyelet 01",
+      "material": "05_Obsidian_support",
+      "source_solids": 1,
+      "source_volume": 12.539332391584052,
+      "exchange_volume": 12.539332391584052,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 12.539332391584052,
+          "step_volume": 12.53933239158405,
+          "relative_difference": 1.416627922386424e-16,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lateral_eyelet_02": {
+      "label": "Lateral eyelet 02",
+      "material": "05_Obsidian_support",
+      "source_solids": 1,
+      "source_volume": 12.539332391584052,
+      "exchange_volume": 12.539332391584052,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 12.539332391584052,
+          "step_volume": 12.53933239158405,
+          "relative_difference": 1.416627922386424e-16,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lateral_eyelet_03": {
+      "label": "Lateral eyelet 03",
+      "material": "05_Obsidian_support",
+      "source_solids": 1,
+      "source_volume": 12.539332391584063,
+      "exchange_volume": 12.539332391584063,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 12.539332391584063,
+          "step_volume": 12.539332391584065,
+          "relative_difference": 1.4166279223864228e-16,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lateral_eyelet_04": {
+      "label": "Lateral eyelet 04",
+      "material": "05_Obsidian_support",
+      "source_solids": 1,
+      "source_volume": 12.539332391584061,
+      "exchange_volume": 12.539332391584061,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 12.539332391584061,
+          "step_volume": 12.539332391584065,
+          "relative_difference": 2.833255844772846e-16,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lateral_eyelet_05": {
+      "label": "Lateral eyelet 05",
+      "material": "05_Obsidian_support",
+      "source_solids": 1,
+      "source_volume": 12.539332391584061,
+      "exchange_volume": 12.539332391584061,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 12.539332391584061,
+          "step_volume": 12.539332391584065,
+          "relative_difference": 2.833255844772846e-16,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Medial_eyelet_01": {
+      "label": "Medial eyelet 01",
+      "material": "05_Obsidian_support",
+      "source_solids": 1,
+      "source_volume": 12.539332391584052,
+      "exchange_volume": 12.539332391584052,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 12.539332391584052,
+          "step_volume": 12.53933239158405,
+          "relative_difference": 1.416627922386424e-16,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Medial_eyelet_02": {
+      "label": "Medial eyelet 02",
+      "material": "05_Obsidian_support",
+      "source_solids": 1,
+      "source_volume": 12.539332391584052,
+      "exchange_volume": 12.539332391584052,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 12.539332391584052,
+          "step_volume": 12.53933239158405,
+          "relative_difference": 1.416627922386424e-16,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Medial_eyelet_03": {
+      "label": "Medial eyelet 03",
+      "material": "05_Obsidian_support",
+      "source_solids": 1,
+      "source_volume": 12.539332391584063,
+      "exchange_volume": 12.539332391584063,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 12.539332391584063,
+          "step_volume": 12.539332391584065,
+          "relative_difference": 1.4166279223864228e-16,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Medial_eyelet_04": {
+      "label": "Medial eyelet 04",
+      "material": "05_Obsidian_support",
+      "source_solids": 1,
+      "source_volume": 12.539332391584061,
+      "exchange_volume": 12.539332391584061,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 12.539332391584061,
+          "step_volume": 12.539332391584065,
+          "relative_difference": 2.833255844772846e-16,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Medial_eyelet_05": {
+      "label": "Medial eyelet 05",
+      "material": "05_Obsidian_support",
+      "source_solids": 1,
+      "source_volume": 12.539332391584061,
+      "exchange_volume": 12.539332391584061,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 12.539332391584061,
+          "step_volume": 12.539332391584065,
+          "relative_difference": 2.833255844772846e-16,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lateral_lime_heel_reflector": {
+      "label": "Lateral lime heel reflector",
+      "material": "12_Lime_tracer",
+      "source_solids": 1,
+      "source_volume": 18.6306274890433,
+      "exchange_volume": 18.6306274890433,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 18.6306274890433,
+          "step_volume": 18.630627489100167,
+          "relative_difference": 3.052408615329996e-12,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Medial_lime_heel_reflector": {
+      "label": "Medial lime heel reflector",
+      "material": "12_Lime_tracer",
+      "source_solids": 1,
+      "source_volume": 18.6306274890433,
+      "exchange_volume": 18.6306274890433,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 18.6306274890433,
+          "step_volume": 18.630627489018316,
+          "relative_difference": 1.3409469221590887e-12,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Toe_guard_bonding_land": {
+      "label": "Toe guard bonding land",
+      "material": "03_Deep_teal_TPU",
+      "source_solids": 1,
+      "source_volume": 2503.963798037483,
+      "exchange_volume": 2503.963798037483,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 2503.963798037483,
+          "step_volume": 2496.2078174882117,
+          "relative_difference": 0.003097481103900106,
+          "comparison": "mesh_volume_at_two_resolutions",
+          "mesh_checks": [
+            {
+              "deflection_mm": 0.025,
+              "source_volume": 2591.93701171875,
+              "step_volume": 2591.562255859375,
+              "relative_difference": 0.00014458524944110972
+            },
+            {
+              "deflection_mm": 0.00625,
+              "source_volume": 2592.340087890625,
+              "step_volume": 2592.503173828125,
+              "relative_difference": 6.29107030600689e-05
+            }
+          ]
+        }
+      ]
+    },
+    "Wrapped_TPU_toe_guard": {
+      "label": "Wrapped TPU toe guard",
+      "material": "03_Deep_teal_TPU",
+      "source_solids": 1,
+      "source_volume": 4056.6017203239244,
+      "exchange_volume": 4056.6017203239244,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 4056.6017203239244,
+          "step_volume": 4049.8686468708765,
+          "relative_difference": 0.001659781737831091,
+          "comparison": "mesh_volume_at_two_resolutions",
+          "mesh_checks": [
+            {
+              "deflection_mm": 0.025,
+              "source_volume": 4209.20361328125,
+              "step_volume": 4209.5,
+              "relative_difference": 7.041396567626582e-05
+            },
+            {
+              "deflection_mm": 0.00625,
+              "source_volume": 4207.599609375,
+              "step_volume": 4210.08447265625,
+              "relative_difference": 0.0005905655271270223
+            }
+          ]
+        }
+      ]
+    },
+    "Sculpted_rear_heel_counter": {
+      "label": "Sculpted rear heel counter",
+      "material": "03_Deep_teal_TPU",
+      "source_solids": 1,
+      "source_volume": 2964.4180519098645,
+      "exchange_volume": 2964.4180519098645,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 2964.4180519098645,
+          "step_volume": 2964.4180519044075,
+          "relative_difference": 1.8408227568044416e-12,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Coral_rear_pull_spine": {
+      "label": "Coral rear pull spine",
+      "material": "04_Coral_TPU",
+      "source_solids": 1,
+      "source_volume": 616.7069935194273,
+      "exchange_volume": 616.7069935194273,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 616.7069935194273,
+          "step_volume": 616.706993519339,
+          "relative_difference": 1.4323604862268026e-13,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Gusseted_padded_tongue": {
+      "label": "Gusseted padded tongue",
+      "material": "03_Deep_teal_TPU",
+      "source_solids": 1,
+      "source_volume": 14488.696526480366,
+      "exchange_volume": 14488.696526480366,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 14488.696526480366,
+          "step_volume": 14488.310483919975,
+          "relative_difference": 2.664439549031569e-05,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Left_tongue_piping_Sweep_0": {
+      "label": "Left tongue piping",
+      "material": "01_Engineered_mesh",
+      "source_solids": 1,
+      "source_volume": 234.22621608279826,
+      "exchange_volume": 234.22621608279826,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 234.22621608279826,
+          "step_volume": 234.22621608107895,
+          "relative_difference": 7.340401502988279e-12,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Right_tongue_piping_Sweep_0": {
+      "label": "Right tongue piping",
+      "material": "01_Engineered_mesh",
+      "source_solids": 1,
+      "source_volume": 234.22614483838709,
+      "exchange_volume": 234.22614483838709,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 234.22614483838709,
+          "step_volume": 234.22614483665387,
+          "relative_difference": 7.39974047594384e-12,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Coral_tongue_label": {
+      "label": "Coral tongue label",
+      "material": "04_Coral_TPU",
+      "source_solids": 1,
+      "source_volume": 68.58475549673409,
+      "exchange_volume": 68.58475549673409,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 68.58475549673409,
+          "step_volume": 68.58475549670918,
+          "relative_difference": 3.6322398666180807e-13,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Rounded_throat_to_vamp_facing": {
+      "label": "Rounded throat to vamp facing",
+      "material": "03_Deep_teal_TPU",
+      "source_solids": 1,
+      "source_volume": 295.7126317744559,
+      "exchange_volume": 295.7126317744559,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 295.7126317744559,
+          "step_volume": 295.7127109573746,
+          "relative_difference": 2.677698218843783e-07,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lateral_continuous_lacing_facing": {
+      "label": "Lateral continuous lacing facing",
+      "material": "03_Deep_teal_TPU",
+      "source_solids": 1,
+      "source_volume": 752.8118245934681,
+      "exchange_volume": 752.8118245934681,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 752.8118245934681,
+          "step_volume": 752.8101767465191,
+          "relative_difference": 2.188922776175189e-06,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Medial_continuous_lacing_facing": {
+      "label": "Medial continuous lacing facing",
+      "material": "03_Deep_teal_TPU",
+      "source_solids": 1,
+      "source_volume": 752.8118291782387,
+      "exchange_volume": 752.8118291782387,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 752.8118291782387,
+          "step_volume": 752.8101792916391,
+          "relative_difference": 2.1916321391774417e-06,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lace_cross_1_over_Sweep_0": {
+      "label": "Lace cross 1 over",
+      "material": "11_Teal_laces",
+      "source_solids": 1,
+      "source_volume": 483.77381219296177,
+      "exchange_volume": 483.77381219296177,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 483.77381219296177,
+          "step_volume": 483.7738121931075,
+          "relative_difference": 3.012699784191257e-13,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lace_cross_1_under_Sweep_0": {
+      "label": "Lace cross 1 under",
+      "material": "11_Teal_laces",
+      "source_solids": 1,
+      "source_volume": 472.73152636964704,
+      "exchange_volume": 472.73152636964704,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 472.73152636964704,
+          "step_volume": 472.73152636878905,
+          "relative_difference": 1.814972170089915e-12,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lace_cross_2_over_Sweep_0": {
+      "label": "Lace cross 2 over",
+      "material": "11_Teal_laces",
+      "source_solids": 1,
+      "source_volume": 443.65382131378794,
+      "exchange_volume": 443.65382131378794,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 443.65382131378794,
+          "step_volume": 443.65382131293535,
+          "relative_difference": 1.92175610472255e-12,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lace_cross_2_under_Sweep_0": {
+      "label": "Lace cross 2 under",
+      "material": "11_Teal_laces",
+      "source_solids": 1,
+      "source_volume": 433.08451504953183,
+      "exchange_volume": 433.08451504953183,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 433.08451504953183,
+          "step_volume": 433.08451504890155,
+          "relative_difference": 1.455327554845858e-12,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lace_cross_3_over_Sweep_0": {
+      "label": "Lace cross 3 over",
+      "material": "11_Teal_laces",
+      "source_solids": 1,
+      "source_volume": 392.06452869959037,
+      "exchange_volume": 392.06452869959037,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 392.06452869959037,
+          "step_volume": 392.0645286994342,
+          "relative_difference": 3.9827339680169023e-13,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lace_cross_3_under_Sweep_0": {
+      "label": "Lace cross 3 under",
+      "material": "11_Teal_laces",
+      "source_solids": 1,
+      "source_volume": 386.7123965479831,
+      "exchange_volume": 386.7123965479831,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 386.7123965479831,
+          "step_volume": 386.7123965479998,
+          "relative_difference": 4.321548854978054e-14,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lace_cross_4_over_Sweep_0": {
+      "label": "Lace cross 4 over",
+      "material": "11_Teal_laces",
+      "source_solids": 1,
+      "source_volume": 370.423523758811,
+      "exchange_volume": 370.423523758811,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 370.423523758811,
+          "step_volume": 370.4235237590212,
+          "relative_difference": 5.674773589274998e-13,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lace_cross_4_under_Sweep_0": {
+      "label": "Lace cross 4 under",
+      "material": "11_Teal_laces",
+      "source_solids": 1,
+      "source_volume": 366.66173595326524,
+      "exchange_volume": 366.66173595326524,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 366.66173595326524,
+          "step_volume": 366.66173595275677,
+          "relative_difference": 1.3867396890706278e-12,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lace_bottom_bridge_Sweep_0": {
+      "label": "Lace bottom bridge",
+      "material": "11_Teal_laces",
+      "source_solids": 1,
+      "source_volume": 317.9895923590449,
+      "exchange_volume": 317.9895923590449,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 317.9895923590449,
+          "step_volume": 317.98959235902066,
+          "relative_difference": 7.615122323677344e-14,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Lace_top_bridge_Sweep_0": {
+      "label": "Lace top bridge",
+      "material": "11_Teal_laces",
+      "source_solids": 1,
+      "source_volume": 410.8831879237765,
+      "exchange_volume": 410.8831879237765,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 410.8831879237765,
+          "step_volume": 410.883187923675,
+          "relative_difference": 2.4708323209426776e-13,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Padded_collar_binding": {
+      "label": "FIXED | Padded collar binding",
+      "material": "01_Engineered_mesh",
+      "source_solids": 4,
+      "source_volume": 9852.066527747642,
+      "exchange_volume": 9852.066527747642,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 4,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 1727.7417577046458,
+          "step_volume": 1727.741757704242,
+          "relative_difference": 2.3372454001670987e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 1,
+          "source_volume": 1727.7417577050694,
+          "step_volume": 1727.7417577045803,
+          "relative_difference": 2.8307516079719577e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 2,
+          "source_volume": 3198.285825345362,
+          "step_volume": 3198.285825344882,
+          "relative_difference": 1.500048717920368e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 3,
+          "source_volume": 3198.2858253453883,
+          "step_volume": 3198.2858253450154,
+          "relative_difference": 1.165914643312504e-13,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Deep_padded_collar_lining": {
+      "label": "FIXED | Deep padded collar lining",
+      "material": "10_Collar_lining",
+      "source_solids": 4,
+      "source_volume": 3521.5383385765836,
+      "exchange_volume": 3521.5383385765836,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 4,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 880.3998871304666,
+          "step_volume": 880.3998871299686,
+          "relative_difference": 5.655933814844835e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 1,
+          "source_volume": 880.399887130483,
+          "step_volume": 880.3998871309855,
+          "relative_difference": 5.707586178450618e-13,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 2,
+          "source_volume": 880.39989725337,
+          "step_volume": 880.3998972517943,
+          "relative_difference": 1.7897543783653215e-12,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 3,
+          "source_volume": 880.3998972533714,
+          "step_volume": 880.3998972524687,
+          "relative_difference": 1.0252994057879243e-12,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Visible_internal_sockliner": {
+      "label": "FIXED | Visible internal sockliner",
+      "material": "10_Collar_lining",
+      "source_solids": 1,
+      "source_volume": 4834.2262042326065,
+      "exchange_volume": 4834.2262042326065,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 4834.2262042326065,
+          "step_volume": 4834.226204231364,
+          "relative_difference": 2.5699454475962735e-13,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Heel_spine_edge_stitching": {
+      "label": "FIXED | Heel spine edge stitching",
+      "material": "12_Lime_tracer",
+      "source_solids": 28,
+      "source_volume": 6.684212441206563,
+      "exchange_volume": 6.684212441206563,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 28,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 0.23725688529752953,
+          "step_volume": 0.2372568852975301,
+          "relative_difference": 2.4566919826047147e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 1,
+          "source_volume": 0.23725688529752953,
+          "step_volume": 0.2372568852975301,
+          "relative_difference": 2.4566919826047147e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 2,
+          "source_volume": 0.23726095049107984,
+          "step_volume": 0.2372609504910784,
+          "relative_difference": 6.0831330609836955e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 3,
+          "source_volume": 0.23726095049107984,
+          "step_volume": 0.2372609504910784,
+          "relative_difference": 6.0831330609836955e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 4,
+          "source_volume": 0.23726846104418733,
+          "step_volume": 0.23726846104418942,
+          "relative_difference": 8.773471880801268e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 5,
+          "source_volume": 0.23726846104418733,
+          "step_volume": 0.23726846104418942,
+          "relative_difference": 8.773471880801268e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 6,
+          "source_volume": 0.23728224751535637,
+          "step_volume": 0.23728224751535823,
+          "relative_difference": 7.837179501289015e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 7,
+          "source_volume": 0.23728224751535637,
+          "step_volume": 0.23728224751535823,
+          "relative_difference": 7.837179501289015e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 8,
+          "source_volume": 0.23730785668260015,
+          "step_volume": 0.23730785668260396,
+          "relative_difference": 1.602354811382007e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 9,
+          "source_volume": 0.23730785668260015,
+          "step_volume": 0.23730785668260396,
+          "relative_difference": 1.602354811382007e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 10,
+          "source_volume": 0.23735659620041943,
+          "step_volume": 0.23735659620041763,
+          "relative_difference": 7.600852236238342e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 11,
+          "source_volume": 0.23735659620041943,
+          "step_volume": 0.23735659620041763,
+          "relative_difference": 7.600852236238342e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 12,
+          "source_volume": 0.23745206864535176,
+          "step_volume": 0.23745206864535323,
+          "relative_difference": 6.195126098587176e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 13,
+          "source_volume": 0.23745206864535176,
+          "step_volume": 0.23745206864535323,
+          "relative_difference": 6.195126098587176e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 14,
+          "source_volume": 0.23764268952825748,
+          "step_volume": 0.2376426895282589,
+          "relative_difference": 5.956565965513351e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 15,
+          "source_volume": 0.23764268952825748,
+          "step_volume": 0.2376426895282589,
+          "relative_difference": 5.956565965513351e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 16,
+          "source_volume": 0.23801689338068505,
+          "step_volume": 0.23801689338068177,
+          "relative_difference": 1.376019103570902e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 17,
+          "source_volume": 0.23801689338068505,
+          "step_volume": 0.23801689338068177,
+          "relative_difference": 1.376019103570902e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 18,
+          "source_volume": 0.23868838044720492,
+          "step_volume": 0.23868838044720564,
+          "relative_difference": 3.0233770267923503e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 19,
+          "source_volume": 0.23868838044720492,
+          "step_volume": 0.23868838044720564,
+          "relative_difference": 3.0233770267923503e-15,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 20,
+          "source_volume": 0.23969715652454815,
+          "step_volume": 0.23969715652455864,
+          "relative_difference": 4.3770263005323766e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 21,
+          "source_volume": 0.23969715652454815,
+          "step_volume": 0.23969715652455864,
+          "relative_difference": 4.3770263005323766e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 22,
+          "source_volume": 0.2409454844994169,
+          "step_volume": 0.24094548449942008,
+          "relative_difference": 1.3132164011105813e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 23,
+          "source_volume": 0.2409454844994169,
+          "step_volume": 0.24094548449942008,
+          "relative_difference": 1.3132164011105813e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 24,
+          "source_volume": 0.24236930746447363,
+          "step_volume": 0.24236930746448548,
+          "relative_difference": 4.889905785455426e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 25,
+          "source_volume": 0.24236930746447363,
+          "step_volume": 0.24236930746448548,
+          "relative_difference": 4.889905785455426e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 26,
+          "source_volume": 0.24356124288217185,
+          "step_volume": 0.2435612428821666,
+          "relative_difference": 2.1537925037981674e-14,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 27,
+          "source_volume": 0.24356124288217185,
+          "step_volume": 0.2435612428821666,
+          "relative_difference": 2.1537925037981674e-14,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Rear_padded_heel_patch": {
+      "label": "FIXED | Rear padded heel patch",
+      "material": "02_Quarter_knit",
+      "source_solids": 1,
+      "source_volume": 860.7970260005463,
+      "exchange_volume": 860.7970260005463,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 860.7970260005463,
+          "step_volume": 861.131348911411,
+          "relative_difference": 0.0003883876230590727,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Reflective_cougar_transfer": {
+      "label": "FIXED | Reflective cougar transfer",
+      "material": "13_Silver_graphic",
+      "source_solids": 15,
+      "source_volume": 38.332921401550124,
+      "exchange_volume": 38.332921401550124,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 15,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 0.00037339580586513786,
+          "step_volume": 0.00037339599724653665,
+          "relative_difference": 5.125429792908791e-07,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 1,
+          "source_volume": 0.06714916676214953,
+          "step_volume": 0.06714497849860256,
+          "relative_difference": 6.237253191559972e-05,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 2,
+          "source_volume": 0.08164412223383123,
+          "step_volume": 0.08164840159272484,
+          "relative_difference": 5.241478230789214e-05,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 3,
+          "source_volume": 0.10299851988901365,
+          "step_volume": 0.10299845795892552,
+          "relative_difference": 6.012716318049327e-07,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 4,
+          "source_volume": 0.10383949554062666,
+          "step_volume": 0.1038380512615558,
+          "relative_difference": 1.390876432260706e-05,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 5,
+          "source_volume": 0.11085733220697085,
+          "step_volume": 0.11085655348750532,
+          "relative_difference": 7.024519262901802e-06,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 6,
+          "source_volume": 0.11203207073776643,
+          "step_volume": 0.11203285356525111,
+          "relative_difference": 6.987530262785996e-06,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 7,
+          "source_volume": 0.14777712240734736,
+          "step_volume": 0.14778222190424511,
+          "relative_difference": 3.450802678168831e-05,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 8,
+          "source_volume": 0.14788502311686075,
+          "step_volume": 0.14788241366575533,
+          "relative_difference": 1.7645134378181926e-05,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 9,
+          "source_volume": 0.14846403090112065,
+          "step_volume": 0.14846339596200378,
+          "relative_difference": 4.2767201793802895e-06,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 10,
+          "source_volume": 0.14855870072743277,
+          "step_volume": 0.14856266207121852,
+          "relative_difference": 2.666517522265285e-05,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 11,
+          "source_volume": 0.6932541321418665,
+          "step_volume": 0.6932515200024107,
+          "relative_difference": 3.7679392514650585e-06,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 12,
+          "source_volume": 1.4069542631518028,
+          "step_volume": 1.406951800975977,
+          "relative_difference": 1.750004168845253e-06,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 13,
+          "source_volume": 3.510326822493564,
+          "step_volume": 3.5113990723459487,
+          "relative_difference": 0.0003054558468784026,
+          "comparison": "brep_volume"
+        },
+        {
+          "solid": 14,
+          "source_volume": 31.59066431267661,
+          "step_volume": 31.338305248897314,
+          "relative_difference": 0.007988406362129873,
+          "comparison": "mesh_volume_at_two_resolutions",
+          "mesh_checks": [
+            {
+              "deflection_mm": 0.025,
+              "source_volume": 31.4116268157959,
+              "step_volume": 31.41172218322754,
+              "relative_difference": 3.036055158807241e-06
+            },
+            {
+              "deflection_mm": 0.00625,
+              "source_volume": 31.334444046020508,
+              "step_volume": 31.334365844726562,
+              "relative_difference": 2.4956975088008336e-06
+            }
+          ]
+        }
+      ]
+    },
+    "Refined_Toe_Bumper": {
+      "label": "Orange toe climbing bumper",
+      "material": "09_Orange_rubber",
+      "source_solids": 1,
+      "source_volume": 4776.931758820382,
+      "exchange_volume": 4776.931758820382,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 4776.931758820382,
+          "step_volume": 4776.93175882001,
+          "relative_difference": 7.787076554700154e-14,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Toe_bumper_grip__1_36_Fitted": {
+      "label": "Toe bumper grip  1 36",
+      "material": "09_Orange_rubber",
+      "source_solids": 1,
+      "source_volume": 62.19072333322148,
+      "exchange_volume": 62.19072333322148,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 62.19072333322148,
+          "step_volume": 62.19112632047355,
+          "relative_difference": 6.479861150898472e-06,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Toe_bumper_grip__1_47_Fitted": {
+      "label": "Toe bumper grip  1 47",
+      "material": "09_Orange_rubber",
+      "source_solids": 1,
+      "source_volume": 62.191235242316665,
+      "exchange_volume": 62.191235242316665,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 62.191235242316665,
+          "step_volume": 62.19114367569769,
+          "relative_difference": 1.4723396089519725e-06,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Toe_bumper_grip_1_36_Fitted": {
+      "label": "Toe bumper grip 1 36",
+      "material": "09_Orange_rubber",
+      "source_solids": 1,
+      "source_volume": 62.19188837165806,
+      "exchange_volume": 62.19188837165806,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 62.19188837165806,
+          "step_volume": 62.19193357294448,
+          "relative_difference": 7.268035687965347e-07,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Toe_bumper_grip_1_47_Fitted": {
+      "label": "Toe bumper grip 1 47",
+      "material": "09_Orange_rubber",
+      "source_solids": 1,
+      "source_volume": 62.190049789719346,
+      "exchange_volume": 62.190049789719346,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 62.190049789719346,
+          "step_volume": 62.19126897731499,
+          "relative_difference": 1.9604222858271443e-05,
+          "comparison": "brep_volume"
+        }
+      ]
+    },
+    "Tongue_Lace_Keeper": {
+      "label": "Tongue lace keeper",
+      "material": "03_Deep_teal_TPU",
+      "source_solids": 1,
+      "source_volume": 82.3097137279745,
+      "exchange_volume": 82.3097137279745,
+      "converted_to_nurbs": false,
+      "roundtrip_solids": 1,
+      "volume_comparison": [
+        {
+          "solid": 0,
+          "source_volume": 82.3097137279745,
+          "step_volume": 82.3092146777583,
+          "relative_difference": 6.063078020669449e-06,
+          "comparison": "brep_volume"
+        }
+      ]
+    }
+  }
+}
