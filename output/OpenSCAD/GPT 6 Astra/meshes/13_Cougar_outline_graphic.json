@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "document_sha256": "e6d5a0f463360ec9b44bf41d10b6285fe9882694a637f8a0363c558d29a27bea",
+    "quality": 1,
+    "stage": 3
+  },
+  "geometry_sha256": "c50243c364e928fd5a8fd80bd59cbdfb937fd4cb5f595c5a8a8c38e147a77e38",
+  "file": "13_Cougar_outline_graphic.stl",
+  "closed_solids": 1,
+  "triangles": 1616,
+  "volume_mm3": 62.141970084925866,
+  "bounds_mm": [
+    [
+      125.3841323852539,
+      -52.97565460205078,
+      40.104209899902344
+    ],
+    [
+      216.70372009277344,
+      -34.08684158325195,
+      69.97571563720703
+    ]
+  ],
+  "watertight": true,
+  "consistent_winding": true
+}

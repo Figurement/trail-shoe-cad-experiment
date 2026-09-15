@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "document_sha256": "e6d5a0f463360ec9b44bf41d10b6285fe9882694a637f8a0363c558d29a27bea",
+    "quality": 1,
+    "stage": 3
+  },
+  "geometry_sha256": "de90086f70c74844aae5c63d6b5dae64c7c535dfaee7000cb4ad913a164a2c44",
+  "file": "05_Collar_padding.stl",
+  "closed_solids": 1,
+  "triangles": 3584,
+  "volume_mm3": 9260.879128059327,
+  "bounds_mm": [
+    [
+      6.338930130004883,
+      -29.066978454589844,
+      93.43257904052734
+    ],
+    [
+      104.53303527832031,
+      29.80314826965332,
+      126.4441909790039
+    ]
+  ],
+  "watertight": true,
+  "consistent_winding": true
+}

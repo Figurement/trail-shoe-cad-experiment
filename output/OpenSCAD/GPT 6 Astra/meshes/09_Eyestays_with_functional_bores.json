@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "document_sha256": "e6d5a0f463360ec9b44bf41d10b6285fe9882694a637f8a0363c558d29a27bea",
+    "quality": 1,
+    "stage": 3
+  },
+  "geometry_sha256": "b006740f2e5a47a99d200c064560f854049001a2f08ea892e6ce5303e6eed269",
+  "file": "09_Eyestays_with_functional_bores.stl",
+  "closed_solids": 4,
+  "triangles": 9354,
+  "volume_mm3": 7463.430411525437,
+  "bounds_mm": [
+    [
+      84.00509643554688,
+      -35.17646026611328,
+      39.2156867980957
+    ],
+    [
+      200.38461303710938,
+      35.17646026611328,
+      122.58887481689453
+    ]
+  ],
+  "watertight": true,
+  "consistent_winding": true
+}

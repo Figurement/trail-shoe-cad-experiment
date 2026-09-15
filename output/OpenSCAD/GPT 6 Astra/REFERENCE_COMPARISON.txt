@@ -1,0 +1,112 @@
+REFERENCE COMPARISON PASS - 2026-09-12
+====================================
+
+Native document: Trail_Shoe.scad
+Current four-view comparison: views/reference_comparison.png
+Principal directions: views/inspection_sheet.png
+Before version and intermediate comparisons: progress/11_reference_accuracy/
+Rear-wrap/curvature follow-up: progress/12_heel_wrap_and_curvature/
+Fabric-lace follow-up: progress/13_fabric_laces/
+
+WHAT DID NOT MATCH, AND WHAT CHANGED
+
+Lateral upper
+  The earlier broad band did not describe the inset black blade or its lower
+  orange edge correctly. The revised image-space sketches include the upper
+  branch, blade cutout and lower rim. The lower return and teardrop opening
+  follow the photographed contours instead of a generic loop. The black
+  support's forward boundary now terminates at the sole rather than leaving
+  unsupported pointed extensions inside the open region.
+
+Medial upper
+  The former large zigzag did not preserve the visible textile windows.
+  Separate forward support contours and the larger rear window replace that
+  broad fill. The heel accent follows the photographed tapered approach and
+  inward curved notch; it is not a mirror of the lateral frame.
+
+Sole and heel
+  The earlier upper edge dropped too early through the midfoot, and the
+  channel read as a uniform layered strip. The profile now holds the rear
+  height longer, drops toward the forefoot and rises into the toe rocker.
+  Rail height and tapered lateral/medial relief are separately controlled.
+  The heel cup and channel arch transversely; the rubber/foam boundary has
+  the visible central downward notch rather than a flat rear edge.
+  The midsole remains continuous. The carrier and upturned rubber wraps are
+  a single closed lofted sheet, with no separate color-band foam solids.
+
+Collar, tongue and eyestays
+  The collar opening was too deeply V-shaped and the tongue crest sat too
+  far rearward. The rim and tongue-section positions have been revised.
+  The first two lace positions belong to the large upper eyestay plate in
+  the photographs, not two separate small pads. That plate and the three
+  lower positions are now represented accordingly.
+  The flattened fabric laces and the separate cougar graphic are retained.
+
+Rear wrap and compound-curvature follow-up
+  Four separate visible rear accents were traced from the heel photograph:
+  the medial and lateral upper slits and their lower hooked returns.
+  They now continue around the heel and join their respective side panels,
+  rather than appearing only at the extreme edges of the rear view.
+  The central webbing stays clear. The upper slots have dark backing layers.
+
+  Rear Y/Z outlines are lofted toward the side panels with independent rake,
+  vertical taper and outer-end flare. The medial upper profile narrows and
+  slopes down into its side band; the lateral profile rises slightly.
+  Redundant side endpoints were trimmed to reduce doubled junction contours,
+  while the existing lower returns into the sole were preserved.
+  These rear-to-side transitions are inferred because neither photograph
+  supplies a calibrated rear-quarter view.
+
+  The early heel stations now form fuller shoulders and a less pinched rear
+  termination. The toe has a broader crown, a blunter rounded end and an
+  asymmetric reinforcement boundary. Its rubber lip follows the forward
+  toe-cap envelope instead of remaining at a fixed, partly buried position.
+  More loft sections are concentrated at the tight toe and heel radii.
+  Sole controls, fabric-lace routing and cougar-outline controls were retained.
+
+  Thin panel skins now use directly linked outer/inner section lofts with
+  annular end faces. This preserves their boundary surfaces without the slow
+  subtraction of lofts sharing coincident end planes.
+
+Fabric-lace follow-up
+  The previous rounded-rectangle sections still read as thin paper strips.
+  Flat-oval sections now provide a fuller crown and continuously rounded
+  edges, while remaining distinctly wider than thick. Gentle span bow,
+  gradual twist, local compression and rounded crossover arches replace
+  the straight, sharp-folded ribbon appearance. Eyelet positions and the
+  crossed routing are retained.
+  This pass changes the fabric's overall form, not its weave texture.
+  Fine fibers, tracer yarns and weave shading remain rendering-material work;
+  the native preview continues to use a plain placeholder color.
+
+Projection
+  The original orthographic comparison exaggerated some front/heel
+  discrepancies. Perspective is now used for the photographic comparison
+  views, while the principal CAD inspection directions remain orthographic.
+  Neither reference image is stretched to force agreement.
+
+HOW TO INTERPRET ACCURACY
+
+The visible contours were inspected against both supplied images, including
+photo-space sketch overlays and corresponding CAD views. Image-space tracing
+does not make the resulting three-dimensional reconstruction exact.
+
+Remaining visible mismatches, beyond the deliberately omitted textures:
+  - Rear returns and their side junctions remain more angular and heavier
+    than the photographed trim, especially in the rear-quarter close-ups.
+  - The toe crown and heel shoulders are fuller, but their exact compound
+    curvature and the toe-cap edge are still approximations.
+  - Lace placement is more regular than the photographed slack and crossings.
+The refinements are not claimed to be exact matches.
+
+The photographs provide no scale, calibrated lens, camera pose or physical
+last. Their panel curves are mapped onto an inferred last using approximate
+registration. Surface curvature, section depths, exact layer thicknesses,
+the collar lining and hidden attachment details therefore remain estimates.
+The underside tread layout is still inferred because no outsole photograph
+was supplied. No numerical accuracy percentage or manufacturing accuracy is
+claimed, and this pass should not be read as a pixel-perfect certification.
+
+Placeholder colors are intentional. Knit structure, tracer yarns, color
+gradients and printed markings other than the retained cougar graphic belong
+to the visualization/material pass, not to geometric contour matching.

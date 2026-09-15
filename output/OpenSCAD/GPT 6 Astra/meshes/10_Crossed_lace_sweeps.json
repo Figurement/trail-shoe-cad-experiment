@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "document_sha256": "e6d5a0f463360ec9b44bf41d10b6285fe9882694a637f8a0363c558d29a27bea",
+    "quality": 1,
+    "stage": 3
+  },
+  "geometry_sha256": "4d0a867df3b9a9efce40bb3f5e6c8157744b9f5ad1672dcff227cf383ed64348",
+  "file": "10_Crossed_lace_sweeps.stl",
+  "closed_solids": 1,
+  "triangles": 62292,
+  "volume_mm3": 2593.271654640703,
+  "bounds_mm": [
+    [
+      101.30976867675781,
+      -26.106721878051758,
+      78.04747772216797
+    ],
+    [
+      195.27183532714844,
+      26.106721878051758,
+      132.50048828125
+    ]
+  ],
+  "watertight": true,
+  "consistent_winding": true
+}

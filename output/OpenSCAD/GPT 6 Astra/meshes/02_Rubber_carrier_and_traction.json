@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "document_sha256": "e6d5a0f463360ec9b44bf41d10b6285fe9882694a637f8a0363c558d29a27bea",
+    "quality": 1,
+    "stage": 3
+  },
+  "geometry_sha256": "bf8ebba88bf3770b9a0219d764ad8422d25e5da161bcd6c9b60113e92e3ea89d",
+  "file": "02_Rubber_carrier_and_traction.stl",
+  "closed_solids": 1,
+  "triangles": 27966,
+  "volume_mm3": 105690.58146825805,
+  "bounds_mm": [
+    [
+      -6.77415132522583,
+      -58.301578521728516,
+      0.6422865390777588
+    ],
+    [
+      294.8708190917969,
+      59.32514953613281,
+      39.9038200378418
+    ]
+  ],
+  "watertight": true,
+  "consistent_winding": true
+}

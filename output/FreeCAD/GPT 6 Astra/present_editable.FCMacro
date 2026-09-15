@@ -1,0 +1,9 @@
+import os
+import runpy
+
+os.environ["COUGAR_MODEL_NAME"] = "Cougar_Trail_Editable"
+try:
+    runpy.run_path(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                               "present_cougar.FCMacro"))
+finally:
+    os.environ.pop("COUGAR_MODEL_NAME", None)

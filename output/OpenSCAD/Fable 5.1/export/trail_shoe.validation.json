@@ -1,0 +1,300 @@
+{
+  "step_file": "/Users/sosko/code/shoe-cad-skills/output/export/trail_shoe.step",
+  "solids_in_step": 70,
+  "all_closed": true,
+  "parts": {
+    "midsole": {
+      "name_preserved": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 783203.3,
+      "volume_match": true
+    },
+    "toe_cap": {
+      "name_preserved": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1562.6,
+      "volume_match": true
+    },
+    "lugs": {
+      "name_preserved": true,
+      "solids": 50,
+      "closed": true,
+      "volume_mm3": 55004.4,
+      "volume_match": true
+    },
+    "upper": {
+      "name_preserved": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 164802.4,
+      "volume_match": true
+    },
+    "tongue": {
+      "name_preserved": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 50278.4,
+      "volume_match": true
+    },
+    "collar": {
+      "name_preserved": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 13428.5,
+      "volume_match": true
+    },
+    "lateral_cage": {
+      "name_preserved": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 6613.8,
+      "volume_match": true
+    },
+    "medial_chevron": {
+      "name_preserved": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1957.3,
+      "volume_match": true
+    },
+    "heel_strip": {
+      "name_preserved": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 3990.2,
+      "volume_match": true
+    },
+    "eyestay": {
+      "name_preserved": true,
+      "solids": 9,
+      "closed": true,
+      "volume_mm3": 5708.3,
+      "volume_match": true
+    },
+    "laces": {
+      "name_preserved": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 5141.1,
+      "volume_match": true
+    },
+    "logo": {
+      "name_preserved": true,
+      "solids": 2,
+      "closed": true,
+      "volume_mm3": 403.1,
+      "volume_match": true
+    }
+  },
+  "expected_solids": 70,
+  "solid_count_match": true,
+  "names_preserved": true,
+  "source_meshes": {
+    "midsole": {
+      "status": "ok",
+      "group": "Foam_Midsole",
+      "solids": 1,
+      "closed": true,
+      "valid": true,
+      "volume_mm3": 783203.3,
+      "bbox": [
+        -0.0,
+        -54.86,
+        7.37,
+        300.01,
+        55.19,
+        67.95
+      ],
+      "seconds": 1.8
+    },
+    "toe_cap": {
+      "status": "ok",
+      "group": "Rubber_Outsole_Org",
+      "solids": 1,
+      "closed": true,
+      "valid": true,
+      "volume_mm3": 1562.6,
+      "bbox": [
+        285.0,
+        -25.01,
+        37.36,
+        300.01,
+        25.9,
+        61.43
+      ],
+      "seconds": 0.1
+    },
+    "lugs": {
+      "status": "ok",
+      "group": "Rubber_Outsole",
+      "solids": 50,
+      "closed": true,
+      "valid": true,
+      "volume_mm3": 55004.4,
+      "bbox": [
+        7.5,
+        -50.28,
+        -0.59,
+        280.71,
+        51.41,
+        37.75
+      ],
+      "seconds": 1.2
+    },
+    "upper": {
+      "status": "ok",
+      "group": "Mesh_Upper",
+      "solids": 1,
+      "closed": true,
+      "valid": true,
+      "volume_mm3": 164802.4,
+      "bbox": [
+        5.0,
+        -50.08,
+        28.53,
+        291.01,
+        50.23,
+        123.78
+      ],
+      "seconds": 1.2
+    },
+    "tongue": {
+      "status": "ok",
+      "group": "Mesh_Upper",
+      "solids": 1,
+      "closed": true,
+      "valid": true,
+      "volume_mm3": 50278.4,
+      "bbox": [
+        100.0,
+        -25.22,
+        71.43,
+        206.01,
+        25.22,
+        134.84
+      ],
+      "seconds": 0.2
+    },
+    "collar": {
+      "status": "ok",
+      "group": "Padded_Collar",
+      "solids": 1,
+      "closed": true,
+      "valid": true,
+      "volume_mm3": 13428.5,
+      "bbox": [
+        20.52,
+        -25.61,
+        96.72,
+        103.48,
+        25.61,
+        128.19
+      ],
+      "seconds": 1.6
+    },
+    "lateral_cage": {
+      "status": "ok",
+      "group": "TPU_Overlays",
+      "solids": 1,
+      "closed": true,
+      "valid": true,
+      "volume_mm3": 6613.8,
+      "bbox": [
+        21.0,
+        -47.57,
+        35.0,
+        193.0,
+        0.0,
+        98.5
+      ],
+      "seconds": 0.4
+    },
+    "medial_chevron": {
+      "status": "ok",
+      "group": "TPU_Overlays",
+      "solids": 1,
+      "closed": true,
+      "valid": true,
+      "volume_mm3": 1957.3,
+      "bbox": [
+        21.0,
+        -0.0,
+        48.46,
+        94.0,
+        33.2,
+        86.3
+      ],
+      "seconds": 0.2
+    },
+    "heel_strip": {
+      "status": "ok",
+      "group": "TPU_Overlays",
+      "solids": 1,
+      "closed": true,
+      "valid": true,
+      "volume_mm3": 3990.2,
+      "bbox": [
+        5.0,
+        -34.08,
+        51.24,
+        30.0,
+        30.43,
+        98.0
+      ],
+      "seconds": 0.5
+    },
+    "eyestay": {
+      "status": "ok",
+      "group": "TPU_Overlays",
+      "solids": 9,
+      "closed": true,
+      "valid": true,
+      "volume_mm3": 5708.3,
+      "bbox": [
+        92.77,
+        -29.05,
+        72.73,
+        219.0,
+        27.49,
+        121.4
+      ],
+      "seconds": 0.2
+    },
+    "laces": {
+      "status": "ok",
+      "group": "Laces",
+      "solids": 1,
+      "closed": true,
+      "valid": false,
+      "volume_mm3": 5141.1,
+      "bbox": [
+        90.65,
+        -22.97,
+        80.41,
+        215.67,
+        22.97,
+        138.55
+      ],
+      "seconds": 0.9
+    },
+    "logo": {
+      "status": "ok",
+      "group": "Print_Logo",
+      "solids": 2,
+      "closed": true,
+      "valid": true,
+      "volume_mm3": 403.1,
+      "bbox": [
+        155.2,
+        -49.25,
+        49.7,
+        211.3,
+        -33.08,
+        74.3
+      ],
+      "seconds": 0.2
+    }
+  }
+}

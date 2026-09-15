@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "document_sha256": "e6d5a0f463360ec9b44bf41d10b6285fe9882694a637f8a0363c558d29a27bea",
+    "quality": 1,
+    "stage": 3
+  },
+  "geometry_sha256": "691d14be25546ff576a33afb8c381ba07569bbe476715207bec67a851bbf3b62",
+  "file": "08_Continuous_toe_reinforcement.stl",
+  "closed_solids": 1,
+  "triangles": 9928,
+  "volume_mm3": 9127.429487552166,
+  "bounds_mm": [
+    [
+      228.76898193359375,
+      -47.153743743896484,
+      39.2156867980957
+    ],
+    [
+      292.1568603515625,
+      46.32200622558594,
+      72.9005126953125
+    ]
+  ],
+  "watertight": true,
+  "consistent_winding": true
+}

@@ -1,0 +1,131 @@
+import json
+import os
+import traceback
+
+import FreeCAD as App
+import FreeCADGui as Gui
+from pivy import coin
+from PySide6.QtGui import QImage
+from PySide6.QtCore import QCoreApplication
+
+ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cad")
+MODEL = os.environ.get("COUGAR_MODEL_NAME", "Cougar_Trail")
+PREFIX = "" if MODEL == "Cougar_Trail" else "editable_"
+
+try:
+    with open(os.path.join(ROOT, PREFIX+"presentation_status.txt"), "w") as f:
+        f.write("RUNNING: scripted image export; STEP is handled separately.\n")
+    doc = App.openDocument(os.path.join(ROOT, MODEL+".FCStd"))
+    gui_doc = Gui.getDocument(doc.Name)
+    active = gui_doc.activeView()
+    active.setAnimationEnabled(False)
+    for obj in doc.Objects:
+        if obj.TypeId == "App::DocumentObjectGroup":
+            obj.ViewObject.Visibility = obj.Name != "Construction"
+    for obj in doc.Objects:
+        if hasattr(obj, "Shape") and not hasattr(obj, "RenderMaterial"):
+            obj.ViewObject.Visibility = False
+        if hasattr(obj, "RenderMaterial"):
+            color = obj.BaseColor[:3]
+            obj.ViewObject.ShapeColor = color
+            obj.ViewObject.LineColor = color
+            obj.ViewObject.DisplayMode = "Shaded"
+            obj.ViewObject.Deviation = 0.12
+            obj.ViewObject.AngularDeflection = 12
+            material = obj.ViewObject.ShapeMaterial
+            material.DiffuseColor = color
+            material.Transparency = 0.0
+            material.Shininess = (1-obj.Roughness)*35
+            material.SpecularColor = (0.12, 0.12, 0.12)
+            obj.ViewObject.ShapeMaterial = material
+            obj.ViewObject.DiffuseColor = [color] * len(obj.Shape.Faces)
+            obj.ViewObject.Transparency = 0
+            obj.ViewObject.Visibility = True
+    doc.ReferenceLastSurface.ViewObject.Visibility = False
+    doc.Construction.ViewObject.Visibility = False
+    settings = App.ParamGet("User parameter:BaseApp/Preferences/View")
+    settings.SetUnsigned("BackgroundColor", 0xEDF1F5FF)
+    settings.SetUnsigned("BackgroundColor2", 0xEDF1F5FF)
+    settings.SetBool("Simple", True)
+    settings.SetBool("UseNewSelection", True)
+    active.setCameraType("Orthographic")
+    active.setAxisCross(False)
+    Gui.Selection.clearSelection()
+    doc.recompute()
+    Gui.updateGui()
+    inventory = [{"name": obj.Name, "material": obj.RenderMaterial,
+                  "visible": obj.ViewObject.Visibility,
+                  "transparency": obj.ViewObject.Transparency,
+                  "faces": len(obj.Shape.Faces), "solids": len(obj.Shape.Solids)}
+                 for obj in doc.Objects if hasattr(obj, "RenderMaterial")]
+    if any(not row["visible"] or row["transparency"] != 0 or not row["solids"]
+           for row in inventory):
+        raise RuntimeError("Incomplete or transparent presentation assembly")
+    with open(os.path.join(ROOT, PREFIX+"render_inventory.json"), "w") as f:
+        json.dump(inventory, f, indent=2)
+
+    def view(name, eye, up=App.Vector(0, 0, 1), target=None, height=None):
+        direction = App.Vector(*eye)
+        right = up.cross(direction)
+        rotation = App.Rotation(right, up, direction, "ZXY")
+        active.setCameraOrientation(rotation.Q)
+        direction.normalize()
+        right = rotation.multVec(App.Vector(1,0,0))
+        vertical = rotation.multVec(App.Vector(0,1,0))
+        corners = [App.Vector(x,y,z) for x in [-10,296]
+                   for y in [-61,61] for z in [0,145]]
+        horizontal_span = max(p.dot(right) for p in corners)-min(p.dot(right) for p in corners)
+        vertical_span = max(p.dot(vertical) for p in corners)-min(p.dot(vertical) for p in corners)
+        node = active.getCameraNode()
+        node.orientation.setValue(coin.SbRotation(*rotation.Q))
+        center = App.Vector(*target) if target is not None else App.Vector(143,0,72.5)
+        position = center+direction*700
+        node.position.setValue(position.x,position.y,position.z)
+        node.nearDistance.setValue(1)
+        node.farDistance.setValue(1500)
+        node.focalDistance.setValue(700)
+        node.height.setValue(height if height is not None
+                             else max(vertical_span,horizontal_span*1100/1800)*1.12)
+        Gui.updateGui()
+        active.redraw()
+        image_path = os.path.join(ROOT, PREFIX+name+".png")
+        active.saveImage(image_path, 1800, 1100, "White")
+        image = QImage(image_path)
+        colors = {image.pixelColor(x,y).rgb() for x in range(0,1800,20)
+                  for y in range(0,1100,20)}
+        if image.isNull() or len(colors) < 20:
+            raise RuntimeError("Blank or incomplete scripted model view: "+name)
+
+    view("01_lateral_hero", (0.35, -1.8, .50))
+    view("02_lateral_profile", (0, -1, .06))
+    view("03_medial_hero", (-.65, 1.8, .68))
+    view("04_top", (0, 0, 1), App.Vector(1, 0, 0))
+    view("05_outsole", (0, 0, -1), App.Vector(1, 0, 0))
+    view("06_heel", (-1, -.08, .3))
+    view("07_front", (1, 0, .2))
+    view("11_front_reference_angle",(1,0,.75))
+    view("12_medial_reference_angle",(-.30,1.8,.35))
+    for obj in doc.Objects:
+        if hasattr(obj, "RenderMaterial"):
+            obj.ViewObject.ShapeColor = (.70,.72,.74)
+            obj.ViewObject.DiffuseColor = [(.70,.72,.74)] * len(obj.Shape.Faces)
+    view("08_geometry_hero", (.35,-1.8,.50))
+    for obj in doc.Objects:
+        if hasattr(obj, "RenderMaterial"):
+            obj.ViewObject.ShapeColor = obj.BaseColor[:3]
+            obj.ViewObject.DiffuseColor = [obj.BaseColor[:3]] * len(obj.Shape.Faces)
+            obj.ViewObject.Transparency = 0
+    view("09_panel_join_detail",(.25,-1.8,.5),target=(106,-28,80),height=90)
+    view("10_sole_join_detail",(.30,-1.8,.38),target=(149,-44,22),height=48)
+    view("01_lateral_hero", (0.35, -1.8, .50))
+    doc.recompute()
+    doc.save()
+    with open(os.path.join(ROOT, PREFIX+"presentation_status.txt"), "w") as f:
+        f.write("SUCCESS: native model saved and twelve scripted views exported. STEP is separate.\n")
+    if os.environ.get("COUGAR_RENDER_EXIT") == "1" and len(App.listDocuments()) == 1:
+        App.closeDocument(doc.Name)
+        QCoreApplication.quit()
+except Exception:
+    with open(os.path.join(ROOT, PREFIX+"presentation_status.txt"), "w") as f:
+        f.write(traceback.format_exc())
+    raise

@@ -1,0 +1,482 @@
+{
+  "application": "FreeCAD 1.1.3",
+  "units": "mm",
+  "component_count": 77,
+  "valid_components": 77,
+  "solid_count": 229,
+  "reference_images": [
+    "Gemini_Generated_Image_8vkt9v8vkt9v8vkt.jpg",
+    "Gemini_Generated_Image_t8v95jt8v95jt8v9.jpg"
+  ],
+  "limitations": [
+    "Dimensions and hidden geometry inferred from perspective concept images.",
+    "Reconstructed last is not scan-based or fit validated.",
+    "No mold split, shrink compensation, or manufacturing certification.",
+    "Colors are placeholders; gradients and fabric textures are left to visualization.",
+    "Fabric panels are smooth shells without knit relief or simulated perforations."
+  ],
+  "components": [
+    {
+      "name": "Heel_quarter_knit",
+      "material": "02_Quarter_knit",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Continuous_vamp_and_midfoot_mesh",
+      "material": "01_Engineered_mesh",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lateral_quarter_material_join",
+      "material": "03_Deep_teal_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Medial_quarter_material_join",
+      "material": "03_Deep_teal_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Padded_collar_binding",
+      "material": "01_Engineered_mesh",
+      "solids": 4,
+      "valid": true
+    },
+    {
+      "name": "Deep_padded_collar_lining",
+      "material": "10_Collar_lining",
+      "solids": 4,
+      "valid": true
+    },
+    {
+      "name": "Visible_internal_sockliner",
+      "material": "10_Collar_lining",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Continuous_sculpted_EVA_midsole",
+      "material": "06_EVA_midsole",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Continuous_rockered_rubber_carrier",
+      "material": "08_Charcoal_rubber",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Charcoal_traction_lugs",
+      "material": "08_Charcoal_rubber",
+      "solids": 55,
+      "valid": true
+    },
+    {
+      "name": "Orange_traction_lugs",
+      "material": "09_Orange_rubber",
+      "solids": 30,
+      "valid": true
+    },
+    {
+      "name": "Charcoal_sidewall_traction_shoulders",
+      "material": "08_Charcoal_rubber",
+      "solids": 15,
+      "valid": true
+    },
+    {
+      "name": "Orange_sidewall_traction_shoulders",
+      "material": "09_Orange_rubber",
+      "solids": 7,
+      "valid": true
+    },
+    {
+      "name": "Lateral_windowed_TPU_quarter_frame_bonding_flange",
+      "material": "03_Deep_teal_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lateral_windowed_TPU_quarter_frame",
+      "material": "03_Deep_teal_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Medial_windowed_TPU_quarter_frame_bonding_flange",
+      "material": "03_Deep_teal_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Medial_windowed_TPU_quarter_frame",
+      "material": "03_Deep_teal_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lateral_tapered_structural_arch_bonding_flange",
+      "material": "03_Deep_teal_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lateral_tapered_structural_arch",
+      "material": "05_Obsidian_support",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lateral_swept_coral_perimeter_bonding_flange",
+      "material": "03_Deep_teal_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lateral_swept_coral_perimeter",
+      "material": "04_Coral_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lateral_rear_structural_inlay_bonding_flange",
+      "material": "03_Deep_teal_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lateral_rear_structural_inlay",
+      "material": "05_Obsidian_support",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lateral_sculpted_coral_return_bonding_flange",
+      "material": "03_Deep_teal_TPU",
+      "solids": 3,
+      "valid": true
+    },
+    {
+      "name": "Lateral_sculpted_coral_return",
+      "material": "04_Coral_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Medial_heel_chevron_border_bonding_flange",
+      "material": "03_Deep_teal_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Medial_heel_chevron_border",
+      "material": "04_Coral_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Medial_heel_counter_inlay",
+      "material": "05_Obsidian_support",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lateral_lime_heel_reflector",
+      "material": "12_Lime_tracer",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Medial_lime_heel_reflector",
+      "material": "12_Lime_tracer",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Toe_guard_bonding_land",
+      "material": "03_Deep_teal_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Wrapped_TPU_toe_guard",
+      "material": "03_Deep_teal_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Orange_toe_climbing_bumper",
+      "material": "09_Orange_rubber",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Toe_bumper_grip__1_36",
+      "material": "09_Orange_rubber",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Toe_bumper_grip__1_47",
+      "material": "09_Orange_rubber",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Toe_bumper_grip_1_36",
+      "material": "09_Orange_rubber",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Toe_bumper_grip_1_47",
+      "material": "09_Orange_rubber",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Sculpted_rear_heel_counter",
+      "material": "03_Deep_teal_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Coral_rear_pull_spine",
+      "material": "04_Coral_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Heel_spine_edge_stitching",
+      "material": "12_Lime_tracer",
+      "solids": 28,
+      "valid": true
+    },
+    {
+      "name": "Rear_padded_heel_patch",
+      "material": "02_Quarter_knit",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Gusseted_padded_tongue",
+      "material": "03_Deep_teal_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Left_tongue_piping",
+      "material": "01_Engineered_mesh",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Right_tongue_piping",
+      "material": "01_Engineered_mesh",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Coral_tongue_label",
+      "material": "04_Coral_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Rounded_throat_to_vamp_facing",
+      "material": "03_Deep_teal_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lateral_continuous_lacing_facing",
+      "material": "03_Deep_teal_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lateral_contoured_eyestay_01",
+      "material": "04_Coral_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lateral_contoured_eyestay_02",
+      "material": "04_Coral_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lateral_contoured_eyestay_03",
+      "material": "04_Coral_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lateral_contoured_eyestay_04",
+      "material": "04_Coral_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lateral_eyelet_01",
+      "material": "05_Obsidian_support",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lateral_eyelet_02",
+      "material": "05_Obsidian_support",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lateral_eyelet_03",
+      "material": "05_Obsidian_support",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lateral_eyelet_04",
+      "material": "05_Obsidian_support",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lateral_eyelet_05",
+      "material": "05_Obsidian_support",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Medial_continuous_lacing_facing",
+      "material": "03_Deep_teal_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Medial_contoured_eyestay_01",
+      "material": "04_Coral_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Medial_contoured_eyestay_02",
+      "material": "04_Coral_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Medial_contoured_eyestay_03",
+      "material": "04_Coral_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Medial_contoured_eyestay_04",
+      "material": "04_Coral_TPU",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Medial_eyelet_01",
+      "material": "05_Obsidian_support",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Medial_eyelet_02",
+      "material": "05_Obsidian_support",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Medial_eyelet_03",
+      "material": "05_Obsidian_support",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Medial_eyelet_04",
+      "material": "05_Obsidian_support",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Medial_eyelet_05",
+      "material": "05_Obsidian_support",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lace_cross_1_over",
+      "material": "11_Teal_laces",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lace_cross_1_under",
+      "material": "11_Teal_laces",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lace_cross_2_over",
+      "material": "11_Teal_laces",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lace_cross_2_under",
+      "material": "11_Teal_laces",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lace_cross_3_over",
+      "material": "11_Teal_laces",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lace_cross_3_under",
+      "material": "11_Teal_laces",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lace_cross_4_over",
+      "material": "11_Teal_laces",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lace_cross_4_under",
+      "material": "11_Teal_laces",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lace_bottom_bridge",
+      "material": "11_Teal_laces",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Lace_top_bridge",
+      "material": "11_Teal_laces",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "name": "Reflective_cougar_transfer",
+      "material": "13_Silver_graphic",
+      "solids": 15,
+      "valid": true
+    }
+  ]
+}

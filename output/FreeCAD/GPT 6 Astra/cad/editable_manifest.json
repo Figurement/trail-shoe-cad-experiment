@@ -1,0 +1,23 @@
+{
+  "file": "Cougar_Trail_Editable.FCStd",
+  "components": 78,
+  "solid_count": 229,
+  "sketches": 263,
+  "native_component_features": 70,
+  "fixed_components": [
+    "Orange_sidewall_traction_shoulders",
+    "Charcoal_sidewall_traction_shoulders",
+    "Padded_collar_binding",
+    "Deep_padded_collar_lining",
+    "Visible_internal_sockliner",
+    "Heel_spine_edge_stitching",
+    "Rear_padded_heel_patch",
+    "Reflective_cougar_transfer"
+  ],
+  "limits": [
+    "Reference last, support surfaces and conformal layer stocks remain fixed.",
+    "Sole section edits do not automatically reshape the upper.",
+    "Eyelets, bores and lace endpoints require coordinated adjustment.",
+    "Bundled Draft supplies 3D paths; no external custom feature proxy is required."
+  ]
+}

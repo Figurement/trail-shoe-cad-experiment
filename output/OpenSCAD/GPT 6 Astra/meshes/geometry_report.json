@@ -1,0 +1,269 @@
+{
+  "settings": {
+    "document_sha256": "e6d5a0f463360ec9b44bf41d10b6285fe9882694a637f8a0363c558d29a27bea",
+    "quality": 1,
+    "stage": 3
+  },
+  "parts": {
+    "midsole": {
+      "file": "01_Continuous_midsole.stl",
+      "closed_solids": 1,
+      "triangles": 26348,
+      "volume_mm3": 880662.5737949385,
+      "bounds_mm": [
+        [
+          -6.032975673675537,
+          -57.829837799072266,
+          6.740276336669922
+        ],
+        [
+          294.1337890625,
+          58.589603424072266,
+          61.20000076293945
+        ]
+      ],
+      "watertight": true,
+      "consistent_winding": true
+    },
+    "outsole": {
+      "file": "02_Rubber_carrier_and_traction.stl",
+      "closed_solids": 1,
+      "triangles": 27966,
+      "volume_mm3": 105690.58146825805,
+      "bounds_mm": [
+        [
+          -6.77415132522583,
+          -58.301578521728516,
+          0.6422865390777588
+        ],
+        [
+          294.8708190917969,
+          59.32514953613281,
+          39.9038200378418
+        ]
+      ],
+      "watertight": true,
+      "consistent_winding": true
+    },
+    "upper": {
+      "file": "03_Continuous_textile_upper.stl",
+      "closed_solids": 1,
+      "triangles": 42190,
+      "volume_mm3": 147873.22819118062,
+      "bounds_mm": [
+        [
+          -0.9803921580314636,
+          -53.06623840332031,
+          30.060195922851562
+        ],
+        [
+          292.1568603515625,
+          48.722774505615234,
+          123.14302062988281
+        ]
+      ],
+      "watertight": true,
+      "consistent_winding": true
+    },
+    "tongue": {
+      "file": "04_Tongue_and_keeper.stl",
+      "closed_solids": 1,
+      "triangles": 8264,
+      "volume_mm3": 8782.044379119163,
+      "bounds_mm": [
+        [
+          89.21568298339844,
+          -24.158117294311523,
+          75.72257232666016
+        ],
+        [
+          198.03921508789062,
+          24.158117294311523,
+          135.7177734375
+        ]
+      ],
+      "watertight": true,
+      "consistent_winding": true
+    },
+    "collar": {
+      "file": "05_Collar_padding.stl",
+      "closed_solids": 1,
+      "triangles": 3584,
+      "volume_mm3": 9260.879128059327,
+      "bounds_mm": [
+        [
+          6.338930130004883,
+          -29.066978454589844,
+          93.43257904052734
+        ],
+        [
+          104.53303527832031,
+          29.80314826965332,
+          126.4441909790039
+        ]
+      ],
+      "watertight": true,
+      "consistent_winding": true
+    },
+    "support_panels": {
+      "file": "06_Asymmetric_support_panels.stl",
+      "closed_solids": 3,
+      "triangles": 27138,
+      "volume_mm3": 14954.499241094338,
+      "bounds_mm": [
+        [
+          -0.9803921580314636,
+          -50.644405364990234,
+          32.588077545166016
+        ],
+        [
+          204.4785919189453,
+          49.417381286621094,
+          108.77851867675781
+        ]
+      ],
+      "watertight": true,
+      "consistent_winding": true
+    },
+    "overlay_panels": {
+      "file": "07_Variable_width_overlay_panels.stl",
+      "closed_solids": 2,
+      "triangles": 19006,
+      "volume_mm3": 5584.439379732393,
+      "bounds_mm": [
+        [
+          5.083286285400391,
+          -54.80887985229492,
+          32.82535171508789
+        ],
+        [
+          191.48341369628906,
+          41.637264251708984,
+          108.79163360595703
+        ]
+      ],
+      "watertight": true,
+      "consistent_winding": true
+    },
+    "toe_guard": {
+      "file": "08_Continuous_toe_reinforcement.stl",
+      "closed_solids": 1,
+      "triangles": 9928,
+      "volume_mm3": 9127.429487552166,
+      "bounds_mm": [
+        [
+          228.76898193359375,
+          -47.153743743896484,
+          39.2156867980957
+        ],
+        [
+          292.1568603515625,
+          46.32200622558594,
+          72.9005126953125
+        ]
+      ],
+      "watertight": true,
+      "consistent_winding": true
+    },
+    "eyelets": {
+      "file": "09_Eyestays_with_functional_bores.stl",
+      "closed_solids": 4,
+      "triangles": 9354,
+      "volume_mm3": 7463.430411525437,
+      "bounds_mm": [
+        [
+          84.00509643554688,
+          -35.17646026611328,
+          39.2156867980957
+        ],
+        [
+          200.38461303710938,
+          35.17646026611328,
+          122.58887481689453
+        ]
+      ],
+      "watertight": true,
+      "consistent_winding": true
+    },
+    "laces": {
+      "file": "10_Crossed_lace_sweeps.stl",
+      "closed_solids": 1,
+      "triangles": 62292,
+      "volume_mm3": 2593.271654640703,
+      "bounds_mm": [
+        [
+          101.30976867675781,
+          -26.106721878051758,
+          78.04747772216797
+        ],
+        [
+          195.27183532714844,
+          26.106721878051758,
+          132.50048828125
+        ]
+      ],
+      "watertight": true,
+      "consistent_winding": true
+    },
+    "heel_webbing": {
+      "file": "11_Heel_webbing.stl",
+      "closed_solids": 1,
+      "triangles": 3228,
+      "volume_mm3": 1236.726335288335,
+      "bounds_mm": [
+        [
+          -0.9803921580314636,
+          -9.803921699523926,
+          44.19675827026367
+        ],
+        [
+          26.47058868408203,
+          9.803921699523926,
+          116.66666412353516
+        ]
+      ],
+      "watertight": true,
+      "consistent_winding": true
+    },
+    "toe_bumper": {
+      "file": "12_Rubber_toe_wrap.stl",
+      "closed_solids": 1,
+      "triangles": 2532,
+      "volume_mm3": 6210.918199393505,
+      "bounds_mm": [
+        [
+          269.191162109375,
+          -24.35293960571289,
+          27.45098114013672
+        ],
+        [
+          298.52392578125,
+          24.35293960571289,
+          61.764705657958984
+        ]
+      ],
+      "watertight": true,
+      "consistent_winding": true
+    },
+    "cougar_graphic": {
+      "file": "13_Cougar_outline_graphic.stl",
+      "closed_solids": 1,
+      "triangles": 1616,
+      "volume_mm3": 62.141970084925866,
+      "bounds_mm": [
+        [
+          125.3841323852539,
+          -52.97565460205078,
+          40.104209899902344
+        ],
+        [
+          216.70372009277344,
+          -34.08684158325195,
+          69.97571563720703
+        ]
+      ],
+      "watertight": true,
+      "consistent_winding": true
+    }
+  }
+}

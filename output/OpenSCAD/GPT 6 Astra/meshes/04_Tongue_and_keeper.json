@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "document_sha256": "e6d5a0f463360ec9b44bf41d10b6285fe9882694a637f8a0363c558d29a27bea",
+    "quality": 1,
+    "stage": 3
+  },
+  "geometry_sha256": "6cd6b6f66126e2780bfaa0895e2be757d3f19164fa809516bfef838dc30f990f",
+  "file": "04_Tongue_and_keeper.stl",
+  "closed_solids": 1,
+  "triangles": 8264,
+  "volume_mm3": 8782.044379119163,
+  "bounds_mm": [
+    [
+      89.21568298339844,
+      -24.158117294311523,
+      75.72257232666016
+    ],
+    [
+      198.03921508789062,
+      24.158117294311523,
+      135.7177734375
+    ]
+  ],
+  "watertight": true,
+  "consistent_winding": true
+}

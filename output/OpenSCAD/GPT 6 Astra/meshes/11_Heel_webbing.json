@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "document_sha256": "e6d5a0f463360ec9b44bf41d10b6285fe9882694a637f8a0363c558d29a27bea",
+    "quality": 1,
+    "stage": 3
+  },
+  "geometry_sha256": "2d76f4a63c747ffd4e42fac2f1d67ab7e216c4854a61af0db4302737bea4dcc1",
+  "file": "11_Heel_webbing.stl",
+  "closed_solids": 1,
+  "triangles": 3228,
+  "volume_mm3": 1236.726335288335,
+  "bounds_mm": [
+    [
+      -0.9803921580314636,
+      -9.803921699523926,
+      44.19675827026367
+    ],
+    [
+      26.47058868408203,
+      9.803921699523926,
+      116.66666412353516
+    ]
+  ],
+  "watertight": true,
+  "consistent_winding": true
+}

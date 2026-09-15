@@ -1,0 +1,106 @@
+COUGAR TRAIL - REFERENCE-BASED FREECAD VISUALIZATION MODEL
+
+FILES
+Cougar_Trail.FCStd    Native FreeCAD BREP solids, material groups and master surface.
+Cougar_Trail_Editable.FCStd  Human-editing document with linked sketches and features.
+Cougar_Trail_Editable.step   Complete named exchange geometry of this refinement.
+Cougar_Trail_Editable.validation.json  Component/material mapping and export report.
+Cougar_Trail.step     Named, color-separated NURBS/analytic CAD components.
+Cougar_Trail.glb      Named triangulation with simple placeholder materials.
+01...12_*.png         Scripted views, including neutral geometry and join close-ups.
+editable_*.png        Views of the separate human-editing document.
+Editing_guide.txt     Instructions and explicit limits of the editable construction.
+model_manifest.json  Component inventory and reconstruction limitations.
+
+OPEN / RENDER
+Open the FCStd file in FreeCAD. The construction group is intentionally hidden.
+The numbered material groups separate upper panels, overlays, foam, rubber,
+lining, laces and reflective graphics. Each visible component has persistent
+RenderMaterial, BaseColor and Roughness properties.
+
+For Blender or another glTF-compatible renderer, import the GLB. Materials,
+component names, normal vectors and placeholder colors are embedded.
+The original GLB accompanies the static reconstruction; it is not regenerated
+by edits to Cougar_Trail_Editable.FCStd. Use its separate STEP for this refinement.
+CAD is millimetres and Z-up;
+the GLB is metres and Y-up, with the axis conversion already applied.
+
+For KeyShot or another CAD renderer, import the STEP with part names and colors
+preserved. Assign final materials by the numbered group/material names.
+The editable model's headless STEP uses native component names rather than
+placeholder GUI colors; its JSON sidecar maps names to materials and labels.
+Use export_cougar_step.py for subsequent STEP revisions; see Editing_guide.txt.
+The EVA midsole is ONE continuous solid, not subdivided for a color gradient.
+Apply the cyan-to-lime fade only as a rendering material.
+Its heel flare, concave waist, rolled lasting lip and toe rocker are modeled
+cross-sectional geometry, not a straight extruded wall or a painted groove.
+Rubber shoulder inserts rise into matching cut pockets in the EVA.
+Fabric panels are smooth continuous shells: there are no knit-relief solids,
+fabric perforations or modeled lace tracer yarns. Add those appearances with
+the visualization team's fabric and lace materials. Structural seam stitches
+are retained as independently hideable geometry.
+
+DESIGN AND SCALE
+One shoe, X from heel to toe; -Y lateral/logo side, +Y medial side; Z up.
+Nominal sole length: 300 mm. Nominal maximum sole width: about 120 mm.
+Upper wall: 1.25 mm. Bonded overlays: approximately 0.5-0.95 mm.
+Lace section: approximately 3.6 x 2.2 mm. Traction block height: 5.8 mm.
+The overall envelope also includes protruding grips, bindings and overlays.
+
+The model includes an open collar and lining, internal sockliner, separate tongue,
+through-bored eyestays, eyelet rings, crisscross lacing and upper/lower bridges,
+projected side supports and an outlined running-cat graphic,
+wrapped toe protection, rear counter and stitched coral spine, sculpted sole
+channels, separate rockered rubber carrier and alternating chevron traction lugs.
+Only structural seam stitches are modeled; textile microstructure is not.
+
+PANEL AND JOIN REFINEMENT
+The quarter-to-vamp textile boundary is a shared curved cut with a 2.1 mm seam
+binding. The upper has no arbitrary transverse material divisions.
+The lateral support cage and medial chevrons use closed projected outlines with
+variable width, rather than constant-width strips. Frame windows expose the
+unperforated textile beneath; they are openings in the TPU, not fabric holes.
+Bonded overlays have 0.42 mm exposed flanges and separately named joining lands.
+First eyestays span two lace holes and have molded inset relief. A continuous
+scalloped facing and a rounded throat end join the tongue to the vamp.
+The toe guard has asymmetric wings and a 1 mm exposed bonding land.
+The thin reflective transfer sits underneath the structural overlays.
+These joining details are inferred from the images, not a factory construction
+specification. PanelThickness and JoinType identify the intended construction.
+
+EDITING / REBUILD
+Use Cougar_Trail_Editable.FCStd for human adjustments; see Editing_guide.txt.
+Its panel outlines, shared textile boundary, sole sections, lug profiles,
+eyelets and lace paths drive linked features. It uses standard FreeCAD features
+and bundled Draft paths, not an external custom feature proxy.
+The reconstructed last, supporting surface stocks and some complex details
+remain fixed reference geometry. It is not a fully constrained shoe-sizing model.
+
+The original Cougar_Trail.FCStd contains static Part features by rendering material.
+DesignParameters records nominal specifications; changing those properties alone
+does not regenerate the shoe. The accompanying build_cougar.py is the editable,
+script-driven construction source. Modify its station tables, surface definitions,
+panel paths or lace layout, then rebuild and rerun the presentation macro.
+
+From the project root on this Mac:
+
+PYTHONPATH=/Applications/FreeCAD.app/Contents/Resources/lib \
+  /Applications/FreeCAD.app/Contents/Resources/bin/python \
+  examples/cougar-shoes/build_cougar.py
+
+Then execute examples/cougar-shoes/present_cougar.FCMacro in FreeCAD to apply
+native display colors and save twelve review views. STEP export is separate.
+The build writes into this cad directory; preserve edited outputs before rebuilding.
+
+ACCURACY LIMITS
+Both supplied perspective concept images were used as visual references. There
+is no dimensioned drawing, physical last or scan, so scale, cross-sections, hidden
+surfaces, outsole layout and small details are inferred. The asymmetric overlay
+language and color placement follow the references, but the model is a visual
+reconstruction, not an exact reverse-engineered physical product.
+
+This is a product-visualization asset, not manufacturing-released tooling.
+It has no fit validation, shrink compensation, mold split, material simulation
+or production tolerancing approval. Separate bonded components intentionally
+overlap, and repeated stitch/lug solids remain compounds for material assignment.
+No specific commercial material or validated physical properties are claimed.

@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "document_sha256": "e6d5a0f463360ec9b44bf41d10b6285fe9882694a637f8a0363c558d29a27bea",
+    "quality": 1,
+    "stage": 3
+  },
+  "geometry_sha256": "88298ae32b19ce2fe601d1ceaedf9b9c2ffb976752e641fccd2a029ed70ee173",
+  "file": "06_Asymmetric_support_panels.stl",
+  "closed_solids": 3,
+  "triangles": 27138,
+  "volume_mm3": 14954.499241094338,
+  "bounds_mm": [
+    [
+      -0.9803921580314636,
+      -50.644405364990234,
+      32.588077545166016
+    ],
+    [
+      204.4785919189453,
+      49.417381286621094,
+      108.77851867675781
+    ]
+  ],
+  "watertight": true,
+  "consistent_winding": true
+}

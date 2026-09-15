@@ -1,6 +1,6 @@
 # Reference-Based Shoe CAD Modeling
 
-Use FreeCAD for modeling. Read the relevant skills and inspect all supplied
+Use OpenSCAD for modeling. Read the relevant skills and inspect all supplied
 reference images before starting.
 
 Prioritize accurate geometry and proportions over the number of details or
@@ -10,7 +10,7 @@ rendering and understandable, natural final adjustments by humans.
 
 ## Human-editable construction
 
-Build a human-editable FreeCAD document from the beginning, using real sketches,
+Build a human-editable OpenSCAD document from the beginning, using real sketches,
 sections, lofts, sweeps, and linked features rather than merely named static
 solids. Organize the feature tree clearly and use actual driving dimensions
 where appropriate. Clearly identify any fixed reference surfaces or features
@@ -19,7 +19,7 @@ that are not parametrically linked.
 Refine the existing feature tree incrementally. Preserve working versions and
 human adjustments rather than regenerating the entire model for every local
 change. Scripting is appropriate when it creates and updates meaningful,
-editable FreeCAD features; it must not substitute for an understandable model.
+editable OpenSCAD features; it must not substitute for an understandable model.
 
 ## Modeling order
 
@@ -47,11 +47,11 @@ boundaries and joins. Fix visible discrepancies before adding further detail.
 Successful recomputation or geometric validity alone does not establish visual
 accuracy.
 
-Let the human follow along: provide the path of the FreeCAD file being created
-and keep progress images available. Use FreeCAD scripting to write images for
+Let the human follow along: provide the path of the OpenSCAD file being created
+and keep progress images available. Use OpenSCAD scripting to write images for
 inspection instead of capturing desktop screenshots. Bind image exports to the
 shoe document, not whichever document happens to be active. Avoid interfering
-with the human's FreeCAD session so they can continue working on the same machine.
+with the human's OpenSCAD session so they can continue working on the same machine.
 
 ## Panel lines and material joins
 
@@ -97,3 +97,7 @@ exchange copies when export-specific conversion is required.
 Reopen exported STEP files and confirm that component names, solid counts,
 closed geometry, and geometry correspondence are preserved. Do not claim an
 export is complete merely because a file was written.
+
+Use the two images as reference as you model:
+input/left-view.jpg
+input/three-angles.jpg

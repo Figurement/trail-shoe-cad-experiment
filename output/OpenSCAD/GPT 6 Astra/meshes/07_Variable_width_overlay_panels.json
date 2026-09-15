@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "document_sha256": "e6d5a0f463360ec9b44bf41d10b6285fe9882694a637f8a0363c558d29a27bea",
+    "quality": 1,
+    "stage": 3
+  },
+  "geometry_sha256": "a392ca8789d498424e036bb336794c0dd708e335ff4d79573e6ab28eca9beb04",
+  "file": "07_Variable_width_overlay_panels.stl",
+  "closed_solids": 2,
+  "triangles": 19006,
+  "volume_mm3": 5584.439379732393,
+  "bounds_mm": [
+    [
+      5.083286285400391,
+      -54.80887985229492,
+      32.82535171508789
+    ],
+    [
+      191.48341369628906,
+      41.637264251708984,
+      108.79163360595703
+    ]
+  ],
+  "watertight": true,
+  "consistent_winding": true
+}

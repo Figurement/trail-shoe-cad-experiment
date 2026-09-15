@@ -1,0 +1,234 @@
+TRAIL SHOE - EDITABLE REFERENCE MODEL
+=====================================
+
+Open Trail_Shoe.scad in OpenSCAD. This is the authoritative editable model.
+Trail_Shoe.glb and meshes/*.stl are derived rendering geometry, not editable
+replacements for the sketches and features in the SCAD document.
+
+REFERENCE AND SCOPE
+
+Both input photographs were used: the lateral view and the composite front,
+medial and heel views. Corresponding comparison sheets are in progress/ and
+views/reference_comparison.png. Each photo crop and CAD image retains its own
+aspect ratio. Camera matches are approximate, not calibrated photogrammetry.
+views/inspection_sheet.png collects the six principal CAD directions.
+The four *_reference views use perspective; the six principal inspection
+directions remain orthographic. See REFERENCE_COMPARISON.txt for the latest pass.
+
+Observed: thick continuous sculpted sole, flared heel, toe rocker, recessed
+waist, asymmetric lateral/medial overlays, continuous textile surfaces, toe
+reinforcement, collar opening/padding, tongue, five lace positions per side,
+unused rear eyelet holes, central heel webbing, front rubber wrap and exposed
+perimeter traction blocks.
+
+Inferred: all physical dimensions, the underlying last and inner cavity,
+material thicknesses, exact section curvature, hidden joins, hidden lace
+returns and the entire centre-outsole traction layout. No bottom photograph
+or scanned last was supplied. This is not a fit-tested last, mold design,
+manufacturing specification or measured reconstruction.
+
+Textile weave, perforation appearance, tracer yarns and color gradients are
+intentionally absent from CAD geometry. Apply them as rendering materials.
+The lateral cougar outline is traced from the supplied photograph and retained
+as a separate thin graphic proxy, including its visible neck and muzzle lines.
+Its hidden tail continues underneath the support cage. The proxy's thickness
+is for reliable display/export, not a measured ink or transfer-film thickness.
+Other printed markings remain for the visualization team.
+Placeholder colors distinguish construction groups; they do not reproduce
+the reference colorway. No color gradient splits the continuous midsole.
+
+EDITING
+
+Axes: X runs heel to toe, negative Y is lateral, positive Y is medial, Z is up.
+Source and STL units are millimetres. The GLB is in metres per glTF convention.
+
+The Customizer dimensions are intended for modest, natural adjustments:
+
+  shoe_length          Nominal sole length; scales the whole assembly.
+                       Rubber wrapping can extend beyond this nominal length.
+  width_scale          Transverse sections, footprint, openings and eyelets.
+  upper_height_scale   Upper height relative to the linked sole/upper join.
+  sole_height_scale    Foam height; moves the upper and attached features.
+  sole_relief_depth    Depth of the tapered, side-specific sole relief.
+  upper_wall           Inferred continuous upper wall thickness.
+  panel_thickness      Scales all surface-panel thicknesses.
+                       Explicit relative depths at the feature calls preserve
+                       the visible overlap hierarchy.
+  collar_padding       Swept collar radius.
+  lace_width           Width of the flattened woven-fabric lace.
+  lace_thickness       Full flat-oval thickness before local compression.
+  lace_drape           Gentle fore/aft bow of each span, in millimetres.
+  lace_roll            Maximum twist control, in degrees; zero at crossings.
+  cougar_line_width    Width of the traced cougar outline.
+  cougar_film          Display thickness of the nonstructural graphic proxy.
+  cougar_offset        X/Z adjustment of the linked lateral graphic sketch.
+  lug_depth            Traction height below the linked rocker surface.
+
+Use stage=1 for silhouette/sole, stage=2 for panels, stage=3 for the assembly.
+Use quality=0 for coarse interactive work and quality=1 for final exports.
+Keep use_exported_meshes=false while editing.
+show_reference_last=true displays the inferred last as a translucent reference.
+part="last" isolates that last; it is not part of the rendering assembly.
+
+CONSTRUCTION / FEATURE DEPENDENCIES
+
+  last_sections + cross_section_powers -> last_rings -> last and skin features
+  sole_outline + sole_profile + sole_levels/flare -> continuous midsole
+  sole_rail_height + side relief curves -> upper rail/channel and tapered relief
+  sole surface + rubber roof profiles -> continuous wrapped outsole sheet
+  perimeter_lug_stations -> both traction placement and matching rubber wraps
+  collar_sketch + upper surface -> opening and swept padded rim
+  tongue_sections + upper surface -> transverse tongue loft and keeper
+  independent lateral/medial side sketches + last skins -> trimmed overlays
+  four rear accent sketches + rear_wraps -> raked rear-to-side continuations
+  toe_cap_sketch + last skin -> continuous toe reinforcement
+  eyelet_x/y + upper surface -> eyestay pads, bores and crossed lace paths
+  cougar_outline/inner_lines + last skin -> lateral surface graphic
+  heel Y/Z sketches + last skin -> webbing and rear cushioning
+  bumper_sections + toe-cap envelope -> rubber toe-wrap loft and raised blocks
+
+Change control stations/sketches, not the vertices generated by the loft
+helpers. All feature geometry is recomputed in OpenSCAD; there is no imported
+static master shoe hidden behind the feature names.
+
+last_skin() lofts the outer and inner section rings with annular end faces.
+It retains the same supporting surfaces without subtracting two solids with
+coincident end planes. Rear-only skins use the same section samples as the
+full last, so their surface joins do not depend on a second approximation.
+
+sole_profile drives the foam's longitudinal upper edge and rocker. The fixed
+upper_join_reference table registers the upper to the nominal profile, so
+subsequent sole-profile edits move the upper and its attached features rather
+than opening a gap. Do not change this registration datum for an ordinary
+sole adjustment. sole_rail_height gives the approximate rail height above the
+main channel; keep it below the local foam thickness.
+
+lateral_trace() and medial_trace() place fixed image-space panel sketches on
+the inferred last. Their control points reference the saved photo crops in
+progress/11_reference_accuracy/. The transformations are approximate design
+registration, not recovered camera calibration. Bounded sketch tangents keep
+closely spaced corners from developing loops. The inset lateral blade and
+lower rim are separate linked sketch features, not a solid filled band.
+
+rear_trace() registers the four independently traced rear accents against
+progress/11_reference_accuracy/heel_lines_reference.png. The tracing overlay
+is preserved in progress/12_heel_wrap_and_curvature/rear_trace_reference.png.
+rear_wraps stores each outline, longitudinal rake, side-join X, coating depth,
+join-height factor, Z pivot, backing outline and outer-end flare.
+The upper slit and lower hooked return are distinct, not mirrored.
+The medial upper continuation slopes down toward its side panel; the lateral
+one rises. Section lofts taper the rear profiles into their narrower side
+bands. The redundant side endpoints are trimmed, while their sole-level
+returns remain intact. Outer sketch ends extend beyond the visible rear
+silhouette to overlap the side pieces. This hidden continuation and its rake are
+inferred, not recovered from the photos. Keep join X below the rear skin's
+40 mm construction boundary. Upper slots expose thin dark backing panels,
+and the central webbing remains clear.
+
+The upper eyestay plate contains the first two used lace positions plus the
+unused rear bore. The remaining three lace positions use the lower pads.
+wrapped_outsole() lofts the underside, outer wall, edge and inner return into
+one carrier/wrap body. heel_rubber_roof controls the visible central heel notch.
+
+cross_section_powers controls the transverse crown: smaller values broaden
+and flatten a section without changing its centre height. The heel stations
+now retain fuller shoulders, and the toe crown rounds into a blunter end.
+last_station() concentrates loft sections at these tighter end curvatures.
+The toe-cap rear boundary is asymmetric. Above the lower rubber/sole junction,
+toe_front_x() locates the forward toe-cap envelope and seats the rubber lip
+against it; changing toe fullness no longer leaves that lip buried.
+tongue_sections
+stores longitudinal position, half-width and lift above that linked surface.
+
+Laces use soft flat-oval sections rather than sharp-edged rectangular ribbons
+or round cords. The nominal section is 4.8 mm wide by 1.6 mm thick, with modest
+compression at eyelets and crossings. Spans have a gentle longitudinal bow
+and gradual roll; rolled edges remain seated against the supporting surface.
+Crossover lifts use a smooth rounded arch instead of a flat-topped bend.
+The section thickness, bow and roll are inferred fabric-shape controls, not
+measurements of yarn or a simulated cloth solution. Fine woven yarns are not
+modeled. The GLB lace group has a matte, nonmetallic cloth placeholder;
+add a fine weave normal/roughness material in the renderer, not large ridges,
+holes or tracer-yarn geometry. views/lace_detail.png shows the lace seating.
+The before/after lace-shape images are in progress/13_fabric_laces/.
+views/cougar_detail.png shows the restored graphic and its panel occlusions.
+views/medial_panel_detail.png and views/sole_detail.png show the revised slots
+and sole relief without the reference photographs' texture and color gradients.
+views/heel_detail.png and views/heel_medial_detail.png show both rear-to-side
+joins; views/toe_detail.png shows the toe crown, cap boundary and rubber lip.
+
+The 2D panel contours and last station values are fixed photo-inferred design
+references. They are editable numeric sketches, not constraints extracted
+from calibrated photographs. Panel skins follow the last; broad changes to
+the station tables or opening proportions still require visual review of
+the linked sketches, lace seating and material joins.
+
+Lateral and medial panels are intentionally different. Do not mirror the
+large lateral sweep onto the medial side. Toe reinforcement wraps the front
+as one cap rather than disconnected left/right plates. The midsole remains
+one solid; its channel is a shaped section, not a separate color strip.
+Thin bonded layers overlap their support slightly. They are rendering
+components, not a non-overlapping bill of manufacturing materials.
+
+PART SELECTION / RENDERING GROUPS
+
+  midsole          01_Continuous_midsole
+  outsole          02_Rubber_carrier_and_traction
+  upper            03_Continuous_textile_upper
+  tongue           04_Tongue_and_keeper
+  collar           05_Collar_padding
+  support_panels   06_Asymmetric_support_panels
+  overlay_panels   07_Variable_width_overlay_panels
+  toe_guard        08_Continuous_toe_reinforcement
+  eyelets          09_Eyestays_with_functional_bores
+  laces            10_Crossed_lace_sweeps
+  heel_webbing     11_Heel_webbing
+  toe_bumper       12_Rubber_toe_wrap
+  cougar_graphic   13_Cougar_outline_graphic
+
+part="all" assembles everything. part="panels" isolates the three panel groups.
+Separate bodies within a material group are intentional where the reference
+shows distinct pieces. These named groups are preserved in the GLB bundle.
+
+REGENERATING OUTPUT
+
+Run these from the repository root with OpenSCAD available on PATH:
+
+  python3 output/render_views.py --stage 1 --folder progress/new_silhouette
+  python3 output/render_views.py --stage 2 --folder progress/new_panels
+  python3 output/export_geometry.py --reuse
+  python3 output/render_views.py --mesh-cache --folder views
+
+Image export uses Python/Pillow. Mesh export additionally uses the available
+NumPy/trimesh environment. Neither command opens or drives a desktop GUI.
+All exports bind explicitly to this Trail_Shoe.scad, never the active GUI tab.
+No STEP operation is part of the image-export command.
+
+export_geometry.py runs OpenSCAD/CGAL separately for each named component,
+rejects reported geometry errors, reopens the STL meshes, and records closed
+solid counts and bounds in meshes/geometry_report.json. It then creates and
+reopens the named GLB assembly. --reuse compares each component's compiled
+OpenSCAD geometry hash, so a local lace or graphic edit does not regenerate
+unchanged parts. The complete image cache still requires the current document
+hash and export settings; a changed native document invalidates it.
+
+--mesh-cache renders the evaluated component meshes through this same native
+OpenSCAD document. This avoids OpenCSG preview artifacts at layered joins.
+It is a derived visualization mode, not the editable model. The script refuses
+an incomplete/stale cache; export again after making native changes.
+
+Normal live previews can show depth-buffer artifacts at overlapping materials.
+Use the evaluated component view when assessing those joins. Inspect the
+lateral/medial sides, front, heel, top and outsole after dimensional changes.
+
+DELIVERY FORMAT LIMITS
+
+OpenSCAD 2021.01 has no native STEP/BREP export. No STEP file is supplied or
+claimed here, and no faceted mesh is mislabeled as a smooth NURBS solid.
+The native SCAD preserves the editable construction; named STL components and
+the GLB provide tessellated product-rendering geometry. If a downstream system
+requires smooth STEP/NURBS, a separate surface-reconstruction stage is needed.
+
+Preserved stage snapshots in progress/ are working history, not final models.
+Final rendering views are in views/. Existing deleted FreeCAD deliverables
+and the user's README edits were left untouched.

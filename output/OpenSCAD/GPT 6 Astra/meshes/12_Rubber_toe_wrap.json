@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "document_sha256": "e6d5a0f463360ec9b44bf41d10b6285fe9882694a637f8a0363c558d29a27bea",
+    "quality": 1,
+    "stage": 3
+  },
+  "geometry_sha256": "00fb0d2c06f2603e9556a6f10ac89ced829d3a9e2e8264428bdce149eab735e0",
+  "file": "12_Rubber_toe_wrap.stl",
+  "closed_solids": 1,
+  "triangles": 2532,
+  "volume_mm3": 6210.918199393505,
+  "bounds_mm": [
+    [
+      269.191162109375,
+      -24.35293960571289,
+      27.45098114013672
+    ],
+    [
+      298.52392578125,
+      24.35293960571289,
+      61.764705657958984
+    ]
+  ],
+  "watertight": true,
+  "consistent_winding": true
+}
